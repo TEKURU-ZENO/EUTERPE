@@ -1,0 +1,13 @@
+{
+  "input_file": "C:\\Users\\Dev Mehta\\Desktop\\EUTERPE\\data\\raw\\userid-timestamp-artid-artname-traid-traname.tsv",
+  "output_parquet": "C:\\Users\\Dev Mehta\\Desktop\\EUTERPE\\data\\interim\\raw_events.parquet",
+  "total_parsed_rows": 19150868,
+  "retained_valid_rows": 19150868,
+  "dropped_missing_fields": 0,
+  "dropped_invalid_timestamps": 0,
+  "unique_users": 992,
+  "unique_raw_artists": 174091,
+  "min_timestamp": "2005-02-14 00:00:07",
+  "max_timestamp": "2013-09-29 18:32:04",
+  "processing_time_seconds": 22.67
+}

@@ -1,0 +1,99 @@
+{
+  "release_version": "1.0.0-mvp",
+  "project_name": "EUTERPE — Discovery Intelligence for Music",
+  "tagline": "Beyond what you listen to. Into what you'll love.",
+  "timestamp": "2026-11-24T15:30:00Z",
+  "status": "VALIDATED_MVP_RELEASE",
+  "dataset": {
+    "source": "Last.fm 1K + MusicBrainz Open Catalog",
+    "eligible_tracks": 443375,
+    "eligible_artists": 51833,
+    "registered_users": 884,
+    "evaluation_test_users": 758,
+    "temporal_splits": {
+      "training_boundary": "2005-02-14 00:00:07 to 2008-10-16 18:26:38 UTC",
+      "validation_boundary": "2008-10-16 18:26:39 to 2009-02-02 14:17:02 UTC",
+      "test_boundary": "2009-02-02 14:17:11 to 2013-09-29 18:32:04 UTC"
+    }
+  },
+  "models": {
+    "collaborative_als": {
+      "artifact_path": "experiments/phase_2/models/als_model.npz",
+      "dimension": 64,
+      "iterations": 20,
+      "regularization": 0.10,
+      "weighting": "BM25 (K1=100, B=0.8)"
+    },
+    "neural_two_tower": {
+      "artifact_path": "experiments/phase_3/models/two_tower_best.pt",
+      "item_embeddings": "experiments/phase_3/models/item_embeddings.npy",
+      "user_embeddings": "experiments/phase_3/models/user_embeddings.npy",
+      "dimension": 64,
+      "retrieval_metric": "mips_inner_product",
+      "features": ["track_id", "artist_id", "history_mean_pooling", "layernorm"]
+    },
+    "reranker": {
+      "alpha_relevance": 0.70,
+      "beta_novelty": 0.20,
+      "max_per_artist": 2,
+      "candidate_pool_depth": 100,
+      "calibration": "z_score_standardization"
+    },
+    "latent_universe": {
+      "artifact_path": "artifacts/catalog/universe_coordinates.npy",
+      "dimensions": 3,
+      "explained_variance_pct": 42.8
+    }
+  },
+  "scientific_qualifications": {
+    "paired_bootstrap_ndcg": {
+      "point_estimate": 0.002064,
+      "95_percent_ci": [-0.000056, 0.004244],
+      "wilcoxon_p_value": 0.003719,
+      "status": "Inconclusive under bootstrap interval spanning zero; statistically significant under paired rank test."
+    },
+    "diversity_ild": {
+      "metric_status": "Strictly representation-dependent. Never compare across differing embedding spaces.",
+      "als_factor_space_ild": {"phase_4": 0.5007, "als": 0.4698, "delta_pct": 6.6},
+      "two_tower_cosine_space_ild": {"phase_4": 0.00298, "als": 0.00270, "delta_pct": 10.6}
+    },
+    "candidate_recall": {
+      "als_top_100": 0.00648,
+      "two_tower_top_100": 0.00685,
+      "fused_union_top_100": 0.00983,
+      "union_expansion_pct": 51.7,
+      "exclusive_neural_hits": 1984,
+      "status": "Authoritative MIPS experiment superceding earlier normalized table."
+    },
+    "score_covariance": {
+      "relevance_novelty_correlation": -0.5599,
+      "covariance": -0.6316,
+      "covariance_term_2_beta_cov": -0.2526,
+      "status": "Novelty acts as antithetic regularizer, dampening score variance from 0.4667 to 0.2141."
+    },
+    "acoustic_attributes": {
+      "provenance": "Artist-level statistical proxy distributions",
+      "status": "Explicitly qualified as proxy estimates, NOT track-level audio waveform analysis."
+    }
+  },
+  "performance": {
+    "cold_boot_seconds": 3.00,
+    "discover_p95_ms": 11.77,
+    "lab_p95_ms": 23.11,
+    "concurrent_qps": 103.39,
+    "concurrent_error_rate_pct": 0.0,
+    "automated_test_suite": "51 passed out of 51 tests (100%)"
+  },
+  "feedback_engine": {
+    "supported_actions": [
+      "like",
+      "dislike",
+      "already_know",
+      "not_my_taste",
+      "more_like_this",
+      "save_for_later",
+      "discovered_something_new"
+    ],
+    "storage": "artifacts/feedback/discovery_feedback.jsonl"
+  }
+}

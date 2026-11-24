@@ -1,0 +1,10 @@
+batch_size: 2048
+epochs: 2
+extra_negatives: 32
+id: N5
+lr: 0.01
+mask_false_negatives: true
+name: N4 + Optimized Mixed Negative Sampling
+use_artist: true
+use_history: true
+use_pop_corr: true

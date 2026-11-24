@@ -1,0 +1,6 @@
+factors: 64
+iterations: 40
+learning_rate: 0.01
+model: BayesianPersonalizedRanking
+regularization: 0.005
+verify_negative_samples: true

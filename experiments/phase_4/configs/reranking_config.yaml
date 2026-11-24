@@ -1,0 +1,8 @@
+alpha: 0.7
+beta: 0.2
+config_id: DiscoveryEngine_a0.7_b0.2_art2
+lambda: 1.0
+max_per_artist: 2
+type: DiscoveryEngine
+val_catalog_coverage: 0.8787144065407386
+val_ndcg_at_20: 0.07521011984095455
