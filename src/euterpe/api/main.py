@@ -22,6 +22,7 @@ from pydantic import BaseModel
 from euterpe.api.service import DiscoveryService, get_discovery_service
 from euterpe.catalog.metadata import TrackMetadata
 from euterpe.catalog.previews import get_preview_resolver
+from euterpe.catalog.onboarding import get_onboarding_manager
 from euterpe.discovery.feedback import (
     FeedbackAction,
     FeedbackEvent,
@@ -69,6 +70,14 @@ class AudioPlaybackRecordRequest(BaseModel):
     completed: bool = False
     replay_increment: int = 0
     play_duration_sec: float = 0.0
+    audio_verified: Optional[bool] = None
+
+
+class OnboardingProcessRequest(BaseModel):
+    participant_id: str
+    stratum: str = "MEDIUM"
+    seeds: List[str]
+    calibration_ratings: Optional[List[Dict[str, Any]]] = None
 
 
 class QualitativeFeedbackRequest(BaseModel):
@@ -515,7 +524,7 @@ def record_batch_impressions(req: BatchImpressionRequest):
 
 @app.post("/api/impressions/audio")
 def record_audio_telemetry(req: AudioPlaybackRecordRequest):
-    """Record audio playback telemetry event on an impression."""
+    """Record audio playback telemetry event on an impression with >= 5.0s qualification."""
     store = get_impression_store()
     imp = store.record_audio_playback(
         impression_id=req.impression_id,
@@ -523,10 +532,88 @@ def record_audio_telemetry(req: AudioPlaybackRecordRequest):
         completed=req.completed,
         replay_increment=req.replay_increment,
         play_duration_sec=req.play_duration_sec,
+        audio_verified=req.audio_verified,
     )
     if not imp:
         raise HTTPException(status_code=404, detail=f"Impression '{req.impression_id}' not found.")
     return {"status": "success", "impression": imp.to_dict()}
+
+
+@app.post("/api/onboarding/process")
+def process_participant_onboarding(req: OnboardingProcessRequest):
+    """Process participant intake, seed matching, and cold-start representation."""
+    onboarding_mgr = get_onboarding_manager()
+    res = onboarding_mgr.process_onboarding(
+        participant_id=req.participant_id,
+        stratum=req.stratum,
+        seeds=req.seeds,
+        calibration_ratings=req.calibration_ratings,
+    )
+    return res
+
+
+@app.get("/api/onboarding/audit")
+def get_onboarding_audit():
+    """Retrieve cold-start resolution rates, fallback frequency, and embedding displacements."""
+    onboarding_mgr = get_onboarding_manager()
+    return onboarding_mgr.get_audit_summary()
+
+
+@app.get("/api/onboarding/seed-resolve")
+def resolve_seed(seed: str = Query(..., description="Artist name to resolve")):
+    """Resolve an individual seed artist against the 51,833-artist catalog."""
+    onboarding_mgr = get_onboarding_manager()
+    res = onboarding_mgr.resolve_seed_artist(seed)
+    return {
+        "seed_input": res.seed_input,
+        "status": res.status,
+        "resolved_artist_id": res.resolved_artist_id,
+        "resolved_artist_name": res.resolved_artist_name,
+        "confidence": res.confidence,
+    }
+
+
+@app.get("/api/governance/safeguards")
+def get_governance_safeguards():
+    """Retrieve Phase 7B execution safeguards and gate threshold definitions."""
+    return {
+        "protocol_version": "v1.1",
+        "cohort": {
+            "type": "Feasibility Pilot Cohort",
+            "sample_size": 36,
+            "strata": {"SPARSE_Q1": 12, "MEDIUM_Q2_Q3": 12, "HEAVY_Q4": 12},
+            "power_classification": "Exploratory / Feasibility (Non-confirmatory)",
+        },
+        "safeguards": {
+            "gate_1": {
+                "name": "Non-Inferiority on Conditional Positive Discovery Rate",
+                "endpoint": "PDR_conditional",
+                "denominator": "evaluated_unfamiliar_impressions",
+                "margin_delta": -0.025,
+                "target": "EUTERPE >= ALS - 2.5%",
+            },
+            "gate_2": {
+                "name": "Long-Tail Superiority",
+                "endpoint": "LTE_prospective",
+                "threshold_bits": 16.0,
+                "target": "EUTERPE >= ALS + 10.0 percentage points",
+            },
+            "gate_3": {
+                "name": "Anti-Filter-Bubble Protection",
+                "endpoint": "bounded_artist_variety",
+                "constraint": "max 2 tracks per artist (C=2)",
+                "distribution_reporting": ["mean", "distribution_min", "pct_slates_under_12_artists"],
+            },
+            "audio_qualification": {
+                "min_duration_sec": 5.0,
+                "rule": "playback >= 5.0s or full completion required for audio_verified certification",
+            },
+            "statistical_unit": {
+                "primary_unit": "participant (N=36)",
+                "paired_inference": "Wilcoxon signed-rank & cluster-bootstrap",
+            },
+        },
+    }
 
 
 @app.get("/api/impressions/summary")

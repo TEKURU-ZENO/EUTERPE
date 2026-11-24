@@ -21,11 +21,16 @@ from euterpe.api.main import (
     record_audio_telemetry,
     submit_qualitative_feedback,
     list_qualitative_feedback,
+    process_participant_onboarding,
+    get_onboarding_audit,
+    resolve_seed,
+    get_governance_safeguards,
     FeedbackSubmitRequest,
     BatchImpressionRequest,
     ImpressionItemModel,
     AudioPlaybackRecordRequest,
     QualitativeFeedbackRequest,
+    OnboardingProcessRequest,
     UI_DIST_PATH,
 )
 from fastapi import HTTPException
@@ -362,3 +367,128 @@ def test_audio_playback_telemetry_and_qualitative():
     q_list = list_qualitative_feedback(participant_id=p_id)
     assert q_list["total"] == 1
     assert q_list["responses"][0]["exposure_condition"] == "engine_alpha"
+
+
+def test_onboarding_seed_resolution_and_audit():
+    """Verify contemporary seed resolution against catalog, fallback detection, and audit logging."""
+    import uuid
+    p_id = f"participant_{uuid.uuid4().hex[:8]}"
+
+    # Single seed resolution check
+    res_seed = resolve_seed("Radiohead")
+    assert res_seed["status"] in ("RESOLVED", "AMBIGUOUS", "UNSUPPORTED")
+
+    # Full participant intake processing
+    req = OnboardingProcessRequest(
+        participant_id=p_id,
+        stratum="SPARSE",
+        seeds=["Radiohead", "Unknown Underground Act 999", "Miles Davis"],
+        calibration_ratings=[{"track_id": 101, "rating": 1.0}, {"track_id": 202, "rating": -1.0}],
+    )
+    res = process_participant_onboarding(req)
+    assert res["status"] == "success"
+    assert res["participant_id"] == p_id
+    assert res["stratum"] == "SPARSE"
+    assert "resolution_rate_pct" in res
+    assert "fallback_required" in res
+    assert "calibration_displacement" in res
+    assert len(res["seed_resolutions"]) == 3
+
+    # Audit summary check
+    audit = get_onboarding_audit()
+    assert audit["total_participants_onboarded"] >= 1
+    assert "mean_resolution_rate_pct" in audit
+    assert "fallback_frequency_pct" in audit
+
+
+def test_audio_qualification_threshold_and_lte_metrics():
+    """Verify Safeguard Item A (>= 5.0s playback) and Item B (LTE >= 16.0 bits) tracking."""
+    import uuid
+    from euterpe.discovery.feedback import get_impression_store, FamiliarityLevel, PreferenceRating, FeedbackAction
+
+    store = get_impression_store()
+    p_id = f"participant_{uuid.uuid4().hex[:8]}"
+    s_id = f"session_{uuid.uuid4().hex[:8]}"
+
+    # 1. Create impression with long-tail novelty (>= 16.0 bits)
+    batch_req = BatchImpressionRequest(
+        participant_id=p_id,
+        session_id=s_id,
+        items=[
+            ImpressionItemModel(
+                track_id=88801,
+                slate_rank=1,
+                exposure_condition="engine_alpha",
+                has_audio_preview=True,
+                preview_url="https://preview.euterpe.internal/88801.mp3",
+                metadata={"novelty_bits": 16.5, "artist": "Experimental Artist"},
+            ),
+            ImpressionItemModel(
+                track_id=88802,
+                slate_rank=2,
+                exposure_condition="engine_alpha",
+                has_audio_preview=True,
+                preview_url="https://preview.euterpe.internal/88802.mp3",
+                metadata={"novelty_bits": 12.0, "artist": "Popular Artist"},
+            ),
+        ],
+    )
+    b_res = record_batch_impressions(batch_req)
+    imp1_id = b_res["impressions"][0]["impression_id"]
+    imp2_id = b_res["impressions"][1]["impression_id"]
+
+    # Short playback (< 5.0s) -> should NOT qualify as audio_verified
+    short_play = record_audio_telemetry(
+        AudioPlaybackRecordRequest(
+            impression_id=imp1_id,
+            started=True,
+            completed=False,
+            play_duration_sec=3.2,
+        )
+    )
+    assert short_play["impression"]["audio_verified"] is False
+
+    # Additional playback taking duration over 5.0s -> QUALIFIES as audio_verified
+    long_play = record_audio_telemetry(
+        AudioPlaybackRecordRequest(
+            impression_id=imp1_id,
+            started=False,
+            completed=False,
+            play_duration_sec=2.5,  # cumulative: 5.7s >= 5.0s
+        )
+    )
+    assert long_play["impression"]["audio_verified"] is True
+
+    # User evaluates imp1 as UNKNOWN + POSITIVE (long-tail positive discovery)
+    store.update_impression_feedback(
+        impression_id=imp1_id,
+        action=FeedbackAction.LIKE,
+        familiarity=FamiliarityLevel.UNKNOWN,
+        preference=PreferenceRating.POSITIVE,
+    )
+
+    # User evaluates imp2 as FAMILIAR + POSITIVE
+    store.update_impression_feedback(
+        impression_id=imp2_id,
+        action=FeedbackAction.LIKE,
+        familiarity=FamiliarityLevel.FAMILIAR,
+        preference=PreferenceRating.POSITIVE,
+    )
+
+    summary = get_impressions_summary()
+    assert summary["audio_verified_impressions_count"] >= 1
+    assert "audio_verified_conditional_pdr_pct" in summary
+    assert "metadata_only_conditional_pdr_pct" in summary
+    assert "prospective_lte_pct" in summary
+    assert summary["prospective_lte_pct"] > 0.0
+
+
+def test_governance_safeguards_endpoint():
+    """Verify governance safeguards configuration and threshold definitions."""
+    safeguards = get_governance_safeguards()
+    assert safeguards["protocol_version"] == "v1.1"
+    assert safeguards["cohort"]["sample_size"] == 36
+    assert safeguards["cohort"]["type"] == "Feasibility Pilot Cohort"
+    assert safeguards["safeguards"]["gate_1"]["margin_delta"] == -0.025
+    assert safeguards["safeguards"]["gate_2"]["threshold_bits"] == 16.0
+    assert safeguards["safeguards"]["audio_qualification"]["min_duration_sec"] == 5.0

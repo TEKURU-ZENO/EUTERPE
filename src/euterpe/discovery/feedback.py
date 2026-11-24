@@ -109,6 +109,7 @@ class ImpressionEvent:
     audio_playback_completed: bool = False
     audio_replay_count: int = 0
     audio_play_duration_sec: float = 0.0
+    audio_verified: bool = False
     metadata: Optional[Dict[str, Any]] = None
 
     def to_dict(self) -> Dict[str, Any]:
@@ -387,6 +388,7 @@ class ImpressionStore:
                                 audio_playback_completed=data.get("audio_playback_completed", False),
                                 audio_replay_count=int(data.get("audio_replay_count", 0)),
                                 audio_play_duration_sec=float(data.get("audio_play_duration_sec", 0.0)),
+                                audio_verified=bool(data.get("audio_verified", False)),
                                 metadata=data.get("metadata"),
                             )
                             self._impressions[imp.impression_id] = imp
@@ -498,8 +500,14 @@ class ImpressionStore:
         completed: bool = False,
         replay_increment: int = 0,
         play_duration_sec: float = 0.0,
+        audio_verified: Optional[bool] = None,
     ) -> Optional[ImpressionEvent]:
-        """Record audio playback telemetry event on an impression."""
+        """Record audio playback telemetry event on an impression.
+        
+        Enforces Phase 7B Safeguard Item A: Playback qualification rule.
+        Impression is certified as audio_verified if >= 5.0 seconds of audio
+        is played or if playback is completed.
+        """
         with self._lock:
             if impression_id not in self._impressions:
                 return None
@@ -512,6 +520,13 @@ class ImpressionStore:
                 imp.audio_replay_count += replay_increment
             if play_duration_sec > 0.0:
                 imp.audio_play_duration_sec += play_duration_sec
+            
+            # Qualification rule: >= 5.0s playback duration or full completion
+            if audio_verified is not None:
+                imp.audio_verified = audio_verified
+            elif imp.audio_play_duration_sec >= 5.0 or imp.audio_playback_completed:
+                imp.audio_verified = True
+
             self._persist_all_unlocked()
             return imp
 
@@ -623,6 +638,23 @@ class ImpressionStore:
                     "audio_playback_completed_count": 0,
                     "audio_completion_rate_pct": 0.0,
                     "total_replay_count": 0,
+                    # Safeguard Item A (Audio-Verified vs Metadata-Only)
+                    "audio_verified_impressions_count": 0,
+                    "audio_verified_evaluated_count": 0,
+                    "audio_verified_unknown_evaluated_count": 0,
+                    "audio_verified_positive_discoveries": 0,
+                    "audio_verified_conditional_pdr_pct": 0.0,
+                    "metadata_only_impressions_count": 0,
+                    "metadata_only_evaluated_count": 0,
+                    "metadata_only_unknown_evaluated_count": 0,
+                    "metadata_only_positive_discoveries": 0,
+                    "metadata_only_conditional_pdr_pct": 0.0,
+                    # Safeguard Item B (LTE Prospective >= 16.0 bits)
+                    "long_tail_impressions_count": 0,
+                    "long_tail_evaluated_count": 0,
+                    "long_tail_unknown_evaluated_count": 0,
+                    "long_tail_engaged_count": 0,
+                    "prospective_lte_pct": 0.0,
                     "condition_breakdown": {},
                 }
 
@@ -637,6 +669,22 @@ class ImpressionStore:
             audio_started_count = 0
             audio_completed_count = 0
             total_replays = 0
+
+            # Safeguard Item A & B tracking
+            audio_ver_total = 0
+            audio_ver_eval = 0
+            audio_ver_unk_eval = 0
+            audio_ver_pos = 0
+
+            meta_only_total = 0
+            meta_only_eval = 0
+            meta_only_unk_eval = 0
+            meta_only_pos = 0
+
+            lt_total = 0
+            lt_eval = 0
+            lt_unk_eval = 0
+            lt_engaged = 0
 
             condition_map: Dict[str, Dict[str, Any]] = {}
 
@@ -655,6 +703,18 @@ class ImpressionStore:
                         "audio_started": 0,
                         "audio_completed": 0,
                         "audio_replays": 0,
+                        "audio_ver_total": 0,
+                        "audio_ver_eval": 0,
+                        "audio_ver_unk_eval": 0,
+                        "audio_ver_pos": 0,
+                        "meta_only_total": 0,
+                        "meta_only_eval": 0,
+                        "meta_only_unk_eval": 0,
+                        "meta_only_pos": 0,
+                        "lt_total": 0,
+                        "lt_eval": 0,
+                        "lt_unk_eval": 0,
+                        "lt_engaged": 0,
                     }
                 condition_map[c]["total"] += 1
 
@@ -670,6 +730,22 @@ class ImpressionStore:
                 total_replays += imp.audio_replay_count
                 condition_map[c]["audio_replays"] += imp.audio_replay_count
 
+                is_audio_ver = imp.audio_verified
+                if is_audio_ver:
+                    audio_ver_total += 1
+                    condition_map[c]["audio_ver_total"] += 1
+                else:
+                    meta_only_total += 1
+                    condition_map[c]["meta_only_total"] += 1
+
+                nov = 0.0
+                if imp.metadata:
+                    nov = float(imp.metadata.get("novelty_bits", imp.metadata.get("novelty", 0.0)) or 0.0)
+                is_lt = nov >= 16.0
+                if is_lt:
+                    lt_total += 1
+                    condition_map[c]["lt_total"] += 1
+
                 has_eval = (
                     imp.familiarity != FamiliarityLevel.UNSPECIFIED
                     or imp.preference != PreferenceRating.UNSPECIFIED
@@ -678,25 +754,56 @@ class ImpressionStore:
                 if has_eval:
                     evaluated += 1
                     condition_map[c]["evaluated"] += 1
+                    if is_audio_ver:
+                        audio_ver_eval += 1
+                        condition_map[c]["audio_ver_eval"] += 1
+                    else:
+                        meta_only_eval += 1
+                        condition_map[c]["meta_only_eval"] += 1
+                    if is_lt:
+                        lt_eval += 1
+                        condition_map[c]["lt_eval"] += 1
 
                 if imp.familiarity == FamiliarityLevel.FAMILIAR:
                     familiar_count += 1
                     condition_map[c]["familiar"] += 1
 
                 # Evaluate Unknown pool (impressions evaluated conditional on being unknown)
-                if imp.familiarity == FamiliarityLevel.UNKNOWN and imp.preference != PreferenceRating.UNSPECIFIED:
+                is_unk_eval = (imp.familiarity == FamiliarityLevel.UNKNOWN and imp.preference != PreferenceRating.UNSPECIFIED)
+                if is_unk_eval:
                     unknown_evaluated_count += 1
                     condition_map[c]["unknown_evaluated"] += 1
+                    if is_audio_ver:
+                        audio_ver_unk_eval += 1
+                        condition_map[c]["audio_ver_unk_eval"] += 1
+                    else:
+                        meta_only_unk_eval += 1
+                        condition_map[c]["meta_only_unk_eval"] += 1
+                    if is_lt:
+                        lt_unk_eval += 1
+                        condition_map[c]["lt_unk_eval"] += 1
 
                 # Positive Discovery: Unfamiliar + Liked
                 if imp.familiarity == FamiliarityLevel.UNKNOWN and imp.preference == PreferenceRating.POSITIVE:
                     pos_disc += 1
                     condition_map[c]["pos_disc"] += 1
+                    if is_audio_ver:
+                        audio_ver_pos += 1
+                        condition_map[c]["audio_ver_pos"] += 1
+                    else:
+                        meta_only_pos += 1
+                        condition_map[c]["meta_only_pos"] += 1
+                    if is_lt:
+                        lt_engaged += 1
+                        condition_map[c]["lt_engaged"] += 1
 
                 # Saved Discovery: Unfamiliar + Saved for later (investigative intent)
                 elif imp.familiarity == FamiliarityLevel.UNKNOWN and imp.preference == PreferenceRating.SAVE_FOR_LATER:
                     saved_disc += 1
                     condition_map[c]["saved_disc"] += 1
+                    if is_lt:
+                        lt_engaged += 1
+                        condition_map[c]["lt_engaged"] += 1
 
                 # Rejected Discovery: Unfamiliar + Disliked/Not my taste
                 elif imp.familiarity == FamiliarityLevel.UNKNOWN and imp.preference == PreferenceRating.NEGATIVE:
@@ -710,6 +817,9 @@ class ImpressionStore:
                 c_unk_eval = max(1, counts["unknown_evaluated"])
                 c_audio_prev = max(1, counts["audio_preview"])
                 c_audio_started = max(1, counts["audio_started"])
+                c_audio_ver_unk = max(1, counts["audio_ver_unk_eval"])
+                c_meta_only_unk = max(1, counts["meta_only_unk_eval"])
+                c_lt_unk = max(1, counts["lt_unk_eval"])
 
                 breakdowns[c] = {
                     "total_impressions": counts["total"],
@@ -737,11 +847,31 @@ class ImpressionStore:
                     "audio_playback_completed_count": counts["audio_completed"],
                     "audio_completion_rate_pct": round(counts["audio_completed"] / c_audio_started * 100.0, 2) if counts["audio_started"] > 0 else 0.0,
                     "total_replay_count": counts["audio_replays"],
+                    # Safeguard Item A (Audio-Verified vs Metadata-Only)
+                    "audio_verified_impressions_count": counts["audio_ver_total"],
+                    "audio_verified_evaluated_count": counts["audio_ver_eval"],
+                    "audio_verified_unknown_evaluated_count": counts["audio_ver_unk_eval"],
+                    "audio_verified_positive_discoveries": counts["audio_ver_pos"],
+                    "audio_verified_conditional_pdr_pct": round(counts["audio_ver_pos"] / c_audio_ver_unk * 100.0, 2) if counts["audio_ver_unk_eval"] > 0 else 0.0,
+                    "metadata_only_impressions_count": counts["meta_only_total"],
+                    "metadata_only_evaluated_count": counts["meta_only_eval"],
+                    "metadata_only_unknown_evaluated_count": counts["meta_only_unk_eval"],
+                    "metadata_only_positive_discoveries": counts["meta_only_pos"],
+                    "metadata_only_conditional_pdr_pct": round(counts["meta_only_pos"] / c_meta_only_unk * 100.0, 2) if counts["meta_only_unk_eval"] > 0 else 0.0,
+                    # Safeguard Item B (LTE Prospective >= 16.0 bits)
+                    "long_tail_impressions_count": counts["lt_total"],
+                    "long_tail_evaluated_count": counts["lt_eval"],
+                    "long_tail_unknown_evaluated_count": counts["lt_unk_eval"],
+                    "long_tail_engaged_count": counts["lt_engaged"],
+                    "prospective_lte_pct": round(counts["lt_engaged"] / c_lt_unk * 100.0, 2) if counts["lt_unk_eval"] > 0 else 0.0,
                 }
 
             global_unk_eval = max(1, unknown_evaluated_count)
             global_audio_prev = max(1, audio_preview_count)
             global_audio_started = max(1, audio_started_count)
+            global_audio_ver_unk = max(1, audio_ver_unk_eval)
+            global_meta_only_unk = max(1, meta_only_unk_eval)
+            global_lt_unk = max(1, lt_unk_eval)
 
             return {
                 "total_impressions": total_impressions,
@@ -770,6 +900,23 @@ class ImpressionStore:
                 "audio_playback_completed_count": audio_completed_count,
                 "audio_completion_rate_pct": round(audio_completed_count / global_audio_started * 100.0, 2) if audio_started_count > 0 else 0.0,
                 "total_replay_count": total_replays,
+                # Safeguard Item A (Audio-Verified vs Metadata-Only)
+                "audio_verified_impressions_count": audio_ver_total,
+                "audio_verified_evaluated_count": audio_ver_eval,
+                "audio_verified_unknown_evaluated_count": audio_ver_unk_eval,
+                "audio_verified_positive_discoveries": audio_ver_pos,
+                "audio_verified_conditional_pdr_pct": round(audio_ver_pos / global_audio_ver_unk * 100.0, 2) if audio_ver_unk_eval > 0 else 0.0,
+                "metadata_only_impressions_count": meta_only_total,
+                "metadata_only_evaluated_count": meta_only_eval,
+                "metadata_only_unknown_evaluated_count": meta_only_unk_eval,
+                "metadata_only_positive_discoveries": meta_only_pos,
+                "metadata_only_conditional_pdr_pct": round(meta_only_pos / global_meta_only_unk * 100.0, 2) if meta_only_unk_eval > 0 else 0.0,
+                # Safeguard Item B (LTE Prospective >= 16.0 bits)
+                "long_tail_impressions_count": lt_total,
+                "long_tail_evaluated_count": lt_eval,
+                "long_tail_unknown_evaluated_count": lt_unk_eval,
+                "long_tail_engaged_count": lt_engaged,
+                "prospective_lte_pct": round(lt_engaged / global_lt_unk * 100.0, 2) if lt_unk_eval > 0 else 0.0,
                 "condition_breakdown": breakdowns,
             }
 
