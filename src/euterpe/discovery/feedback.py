@@ -569,19 +569,27 @@ class ImpressionStore:
         action: FeedbackAction,
         familiarity: Optional[FamiliarityLevel] = None,
         preference: Optional[PreferenceRating] = None,
+        persist: bool = True,
     ) -> Optional[ImpressionEvent]:
         """Update an existing impression with participant feedback."""
         with self._lock:
             if impression_id not in self._impressions:
                 return None
             imp = self._impressions[impression_id]
-            imp.action = action
+            if action is not None:
+                imp.action = FeedbackAction(action) if not isinstance(action, FeedbackAction) else action
             if familiarity is not None:
-                imp.familiarity = familiarity
+                imp.familiarity = FamiliarityLevel(familiarity) if not isinstance(familiarity, FamiliarityLevel) else familiarity
             if preference is not None:
-                imp.preference = preference
-            self._persist_all_unlocked()
+                imp.preference = PreferenceRating(preference) if not isinstance(preference, PreferenceRating) else preference
+            if persist:
+                self._persist_all_unlocked()
             return imp
+
+    def persist_all(self) -> None:
+        """Explicitly write all impressions to disk."""
+        with self._lock:
+            self._persist_all_unlocked()
 
     def _persist_all_unlocked(self) -> None:
         """Rewrite impressions file to reflect updates."""

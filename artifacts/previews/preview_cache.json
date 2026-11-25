@@ -6501,5 +6501,2770 @@
     "track_name": "Alloway Grove",
     "preview_url": null,
     "source": "unavailable"
+  },
+  "370313": {
+    "track_id": "370313",
+    "artist_name": "Lonesome Organist Rapes Page-Turner",
+    "track_name": "The Dresden Dolls",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/370313.mp3",
+    "source": "sample_provider"
+  },
+  "16192": {
+    "track_id": "16192",
+    "artist_name": "High",
+    "track_name": "Ambeon",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/16192.mp3",
+    "source": "sample_provider"
+  },
+  "16195": {
+    "track_id": "16195",
+    "artist_name": "Sick Ceremony",
+    "track_name": "Ambeon",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/16195.mp3",
+    "source": "sample_provider"
+  },
+  "18102": {
+    "track_id": "18102",
+    "artist_name": "Downward Spiral Into Madness",
+    "track_name": "Anata",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "258263": {
+    "track_id": "258263",
+    "artist_name": "My Medicine",
+    "track_name": "Nana Starring Mika Nakashima",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/258263.mp3",
+    "source": "sample_provider"
+  },
+  "381538": {
+    "track_id": "381538",
+    "artist_name": "Pulse",
+    "track_name": "The Mad Capsule Markets",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/381538.mp3",
+    "source": "sample_provider"
+  },
+  "288985": {
+    "track_id": "288985",
+    "artist_name": "Without You I'M Nothing",
+    "track_name": "Placebo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/288985.mp3",
+    "source": "sample_provider"
+  },
+  "288800": {
+    "track_id": "288800",
+    "artist_name": "English Summer Rain",
+    "track_name": "Placebo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/288800.mp3",
+    "source": "sample_provider"
+  },
+  "255736": {
+    "track_id": "255736",
+    "artist_name": "Falling Away With You",
+    "track_name": "Muse",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/255736.mp3",
+    "source": "sample_provider"
+  },
+  "407011": {
+    "track_id": "407011",
+    "artist_name": "10,000 Days (Wings, Part 2)",
+    "track_name": "Tool",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/407011.mp3",
+    "source": "sample_provider"
+  },
+  "287700": {
+    "track_id": "287700",
+    "artist_name": "On The Run",
+    "track_name": "Pink Floyd",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "287566": {
+    "track_id": "287566",
+    "artist_name": "Any Colour You Like",
+    "track_name": "Pink Floyd",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/287566.mp3",
+    "source": "sample_provider"
+  },
+  "351749": {
+    "track_id": "351749",
+    "artist_name": "Toxicity",
+    "track_name": "System Of A Down",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/351749.mp3",
+    "source": "sample_provider"
+  },
+  "144074": {
+    "track_id": "144074",
+    "artist_name": "I Think I'M Paranoid",
+    "track_name": "Garbage",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "99495": {
+    "track_id": "99495",
+    "artist_name": "Suffer Well",
+    "track_name": "Depeche Mode",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/99495.mp3",
+    "source": "sample_provider"
+  },
+  "389305": {
+    "track_id": "389305",
+    "artist_name": "I Will Dare",
+    "track_name": "The Replacements",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "48525": {
+    "track_id": "48525",
+    "artist_name": "Atomic",
+    "track_name": "Blondie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48525.mp3",
+    "source": "sample_provider"
+  },
+  "378004": {
+    "track_id": "378004",
+    "artist_name": "Cut Dead",
+    "track_name": "The Jesus And Mary Chain",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/378004.mp3",
+    "source": "sample_provider"
+  },
+  "336282": {
+    "track_id": "336282",
+    "artist_name": "Youth Against Fascism",
+    "track_name": "Sonic Youth",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/336282.mp3",
+    "source": "sample_provider"
+  },
+  "143784": {
+    "track_id": "143784",
+    "artist_name": "Ether",
+    "track_name": "Gang Of Four",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/143784.mp3",
+    "source": "sample_provider"
+  },
+  "378108": {
+    "track_id": "378108",
+    "artist_name": "Some Candy Talking",
+    "track_name": "The Jesus And Mary Chain",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/378108.mp3",
+    "source": "sample_provider"
+  },
+  "328400": {
+    "track_id": "328400",
+    "artist_name": "Hong Kong Garden",
+    "track_name": "Siouxsie And The Banshees",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/328400.mp3",
+    "source": "sample_provider"
+  },
+  "97945": {
+    "track_id": "97945",
+    "artist_name": "Pristine",
+    "track_name": "Delain",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/97945.mp3",
+    "source": "sample_provider"
+  },
+  "18155": {
+    "track_id": "18155",
+    "artist_name": "Black Orchid",
+    "track_name": "Anathema",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/18155.mp3",
+    "source": "sample_provider"
+  },
+  "427570": {
+    "track_id": "427570",
+    "artist_name": "Angels",
+    "track_name": "Within Temptation",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/427570.mp3",
+    "source": "sample_provider"
+  },
+  "410570": {
+    "track_id": "410570",
+    "artist_name": "My Lost Lenore",
+    "track_name": "Tristania",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/410570.mp3",
+    "source": "sample_provider"
+  },
+  "233989": {
+    "track_id": "233989",
+    "artist_name": "This Love",
+    "track_name": "Maroon 5",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "233974": {
+    "track_id": "233974",
+    "artist_name": "She Will Be Loved",
+    "track_name": "Maroon 5",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/233974.mp3",
+    "source": "sample_provider"
+  },
+  "144100": {
+    "track_id": "144100",
+    "artist_name": "Only Happy When It Rains",
+    "track_name": "Garbage",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/144100.mp3",
+    "source": "sample_provider"
+  },
+  "362142": {
+    "track_id": "362142",
+    "artist_name": "My Humps",
+    "track_name": "The Black Eyed Peas",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/362142.mp3",
+    "source": "sample_provider"
+  },
+  "227643": {
+    "track_id": "227643",
+    "artist_name": "Sorry",
+    "track_name": "Madonna",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/227643.mp3",
+    "source": "sample_provider"
+  },
+  "241716": {
+    "track_id": "241716",
+    "artist_name": "The Unforgiven",
+    "track_name": "Metallica",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/241716.mp3",
+    "source": "sample_provider"
+  },
+  "366655": {
+    "track_id": "366655",
+    "artist_name": "Linger",
+    "track_name": "The Cranberries",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/366655.mp3",
+    "source": "sample_provider"
+  },
+  "165631": {
+    "track_id": "165631",
+    "artist_name": "The Reason",
+    "track_name": "Hoobastank",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/165631.mp3",
+    "source": "sample_provider"
+  },
+  "387835": {
+    "track_id": "387835",
+    "artist_name": "Breathe",
+    "track_name": "The Prodigy",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "102471": {
+    "track_id": "102471",
+    "artist_name": "Thank You",
+    "track_name": "Dido",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/102471.mp3",
+    "source": "sample_provider"
+  },
+  "238505": {
+    "track_id": "238505",
+    "artist_name": "Everything Counts",
+    "track_name": "Meat Beat Manifesto",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/238505.mp3",
+    "source": "sample_provider"
+  },
+  "305796": {
+    "track_id": "305796",
+    "artist_name": "Rolling Thunder",
+    "track_name": "Ride",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/305796.mp3",
+    "source": "sample_provider"
+  },
+  "305767": {
+    "track_id": "305767",
+    "artist_name": "Furthest Sense",
+    "track_name": "Ride",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "238628": {
+    "track_id": "238628",
+    "artist_name": "United Nations (E.T.C.)",
+    "track_name": "Meat Beat Manifesto",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/238628.mp3",
+    "source": "sample_provider"
+  },
+  "332113": {
+    "track_id": "332113",
+    "artist_name": "Celia'S Dream",
+    "track_name": "Slowdive",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/332113.mp3",
+    "source": "sample_provider"
+  },
+  "256362": {
+    "track_id": "256362",
+    "artist_name": "(Please) Lose Yourself In Me",
+    "track_name": "My Bloody Valentine",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/256362.mp3",
+    "source": "sample_provider"
+  },
+  "266208": {
+    "track_id": "266208",
+    "artist_name": "Lounge Act",
+    "track_name": "Nirvana",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/266208.mp3",
+    "source": "sample_provider"
+  },
+  "13748": {
+    "track_id": "13748",
+    "artist_name": "Them Bones",
+    "track_name": "Alice In Chains",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "4100": {
+    "track_id": "4100",
+    "artist_name": "Judith",
+    "track_name": "A Perfect Circle",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/4100.mp3",
+    "source": "sample_provider"
+  },
+  "30590": {
+    "track_id": "30590",
+    "artist_name": "Shadow On The Sun",
+    "track_name": "Audioslave",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "111363": {
+    "track_id": "111363",
+    "artist_name": "Ramble On",
+    "track_name": "Dread Zeppelin",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "136617": {
+    "track_id": "136617",
+    "artist_name": "My Hero",
+    "track_name": "Foo Fighters",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/136617.mp3",
+    "source": "sample_provider"
+  },
+  "237408": {
+    "track_id": "237408",
+    "artist_name": "I Want You To Stay",
+    "track_name": "Max\u00efmo Park",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/237408.mp3",
+    "source": "sample_provider"
+  },
+  "237413": {
+    "track_id": "237413",
+    "artist_name": "Kiss You Better",
+    "track_name": "Max\u00efmo Park",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/237413.mp3",
+    "source": "sample_provider"
+  },
+  "195739": {
+    "track_id": "195739",
+    "artist_name": "Na Na Na Na Naa",
+    "track_name": "Kaiser Chiefs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/195739.mp3",
+    "source": "sample_provider"
+  },
+  "380607": {
+    "track_id": "380607",
+    "artist_name": "Up The Bracket",
+    "track_name": "The Libertines",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/380607.mp3",
+    "source": "sample_provider"
+  },
+  "376498": {
+    "track_id": "376498",
+    "artist_name": "Hate To Say I Told You So",
+    "track_name": "The Hives",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/376498.mp3",
+    "source": "sample_provider"
+  },
+  "104475": {
+    "track_id": "104475",
+    "artist_name": "Bang Bang You'Re Dead",
+    "track_name": "Dirty Pretty Things",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "378743": {
+    "track_id": "378743",
+    "artist_name": "For Reasons Unknown",
+    "track_name": "The Killers",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/378743.mp3",
+    "source": "sample_provider"
+  },
+  "373492": {
+    "track_id": "373492",
+    "artist_name": "Henrietta",
+    "track_name": "The Fratellis",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "48198": {
+    "track_id": "48198",
+    "artist_name": "Hunting For Witches",
+    "track_name": "Bloc Party",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48198.mp3",
+    "source": "sample_provider"
+  },
+  "195693": {
+    "track_id": "195693",
+    "artist_name": "Born To Be A Dancer",
+    "track_name": "Kaiser Chiefs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/195693.mp3",
+    "source": "sample_provider"
+  },
+  "48227": {
+    "track_id": "48227",
+    "artist_name": "Luno",
+    "track_name": "Bloc Party",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48227.mp3",
+    "source": "sample_provider"
+  },
+  "366246": {
+    "track_id": "366246",
+    "artist_name": "Dreaming Of You",
+    "track_name": "The Coral",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/366246.mp3",
+    "source": "sample_provider"
+  },
+  "139509": {
+    "track_id": "139509",
+    "artist_name": "This Boy",
+    "track_name": "Franz Ferdinand",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/139509.mp3",
+    "source": "sample_provider"
+  },
+  "116301": {
+    "track_id": "116301",
+    "artist_name": "Munich",
+    "track_name": "Editors",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/116301.mp3",
+    "source": "sample_provider"
+  },
+  "261314": {
+    "track_id": "261314",
+    "artist_name": "Do It",
+    "track_name": "Nelly Furtado",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/261314.mp3",
+    "source": "sample_provider"
+  },
+  "65386": {
+    "track_id": "65386",
+    "artist_name": "Meeting Paris Hilton",
+    "track_name": "Cansei De Ser Sexy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/65386.mp3",
+    "source": "sample_provider"
+  },
+  "17610": {
+    "track_id": "17610",
+    "artist_name": "Addicted",
+    "track_name": "Amy Winehouse",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/17610.mp3",
+    "source": "sample_provider"
+  },
+  "244760": {
+    "track_id": "244760",
+    "artist_name": "Big Girl (You Are Beautiful)",
+    "track_name": "Mika",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/244760.mp3",
+    "source": "sample_provider"
+  },
+  "355772": {
+    "track_id": "355772",
+    "artist_name": "Breathe",
+    "track_name": "T\u00e9l\u00e9popmusik",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/355772.mp3",
+    "source": "sample_provider"
+  },
+  "261363": {
+    "track_id": "261363",
+    "artist_name": "No Hay Igual",
+    "track_name": "Nelly Furtado",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/261363.mp3",
+    "source": "sample_provider"
+  },
+  "309148": {
+    "track_id": "309148",
+    "artist_name": "Overpowered",
+    "track_name": "R\u00f3is\u00edn Murphy",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "3824": {
+    "track_id": "3824",
+    "artist_name": "Take On Me",
+    "track_name": "A-Ha",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/3824.mp3",
+    "source": "sample_provider"
+  },
+  "151699": {
+    "track_id": "151699",
+    "artist_name": "Dare",
+    "track_name": "Gorillaz",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/151699.mp3",
+    "source": "sample_provider"
+  },
+  "378741": {
+    "track_id": "378741",
+    "artist_name": "Everything Will Be Alright",
+    "track_name": "The Killers",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/378741.mp3",
+    "source": "sample_provider"
+  },
+  "195734": {
+    "track_id": "195734",
+    "artist_name": "Modern Way",
+    "track_name": "Kaiser Chiefs",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "79398": {
+    "track_id": "79398",
+    "artist_name": "Talk",
+    "track_name": "Coldplay",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/79398.mp3",
+    "source": "sample_provider"
+  },
+  "139520": {
+    "track_id": "139520",
+    "artist_name": "Well That Was Easy",
+    "track_name": "Franz Ferdinand",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/139520.mp3",
+    "source": "sample_provider"
+  },
+  "270129": {
+    "track_id": "270129",
+    "artist_name": "Some Might Say",
+    "track_name": "Oasis",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/270129.mp3",
+    "source": "sample_provider"
+  },
+  "409526": {
+    "track_id": "409526",
+    "artist_name": "Sing",
+    "track_name": "Travis",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/409526.mp3",
+    "source": "sample_provider"
+  },
+  "197367": {
+    "track_id": "197367",
+    "artist_name": "Processed Beats",
+    "track_name": "Kasabian",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/197367.mp3",
+    "source": "sample_provider"
+  },
+  "333704": {
+    "track_id": "333704",
+    "artist_name": "Spitting Games",
+    "track_name": "Snow Patrol",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "25929": {
+    "track_id": "25929",
+    "artist_name": "Perhaps Vampires Is A Bit Strong But...",
+    "track_name": "Arctic Monkeys",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/25929.mp3",
+    "source": "sample_provider"
+  },
+  "298019": {
+    "track_id": "298019",
+    "artist_name": "Black Star",
+    "track_name": "Radiohead",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/298019.mp3",
+    "source": "sample_provider"
+  },
+  "266192": {
+    "track_id": "266192",
+    "artist_name": "In Bloom",
+    "track_name": "Nirvana",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/266192.mp3",
+    "source": "sample_provider"
+  },
+  "413295": {
+    "track_id": "413295",
+    "artist_name": "Vertigo",
+    "track_name": "U2",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/413295.mp3",
+    "source": "sample_provider"
+  },
+  "396805": {
+    "track_id": "396805",
+    "artist_name": "Lucky Man",
+    "track_name": "The Verve",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/396805.mp3",
+    "source": "sample_provider"
+  },
+  "87519": {
+    "track_id": "87519",
+    "artist_name": "Digital Love",
+    "track_name": "Daft Punk",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/87519.mp3",
+    "source": "sample_provider"
+  },
+  "212249": {
+    "track_id": "212249",
+    "artist_name": "Daft Punk Is Playing At My House",
+    "track_name": "Lcd Soundsystem",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/212249.mp3",
+    "source": "sample_provider"
+  },
+  "65341": {
+    "track_id": "65341",
+    "artist_name": "Art Bitch",
+    "track_name": "Cansei De Ser Sexy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/65341.mp3",
+    "source": "sample_provider"
+  },
+  "87602": {
+    "track_id": "87602",
+    "artist_name": "Robot Rock",
+    "track_name": "Daft Punk",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/87602.mp3",
+    "source": "sample_provider"
+  },
+  "212289": {
+    "track_id": "212289",
+    "artist_name": "Someone Great",
+    "track_name": "Lcd Soundsystem",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "103181": {
+    "track_id": "103181",
+    "artist_name": "Idealistic",
+    "track_name": "Digitalism",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/103181.mp3",
+    "source": "sample_provider"
+  },
+  "212501": {
+    "track_id": "212501",
+    "artist_name": "Deceptacon",
+    "track_name": "Le Tigre",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/212501.mp3",
+    "source": "sample_provider"
+  },
+  "225771": {
+    "track_id": "225771",
+    "artist_name": "Boyz",
+    "track_name": "M.I.A.",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "395515": {
+    "track_id": "395515",
+    "artist_name": "That'S Not My Name",
+    "track_name": "The Ting Tings",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/395515.mp3",
+    "source": "sample_provider"
+  },
+  "325020": {
+    "track_id": "325020",
+    "artist_name": "Lover Of Others",
+    "track_name": "Shitdisco",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/325020.mp3",
+    "source": "sample_provider"
+  },
+  "7919": {
+    "track_id": "7919",
+    "artist_name": "Aeroplane",
+    "track_name": "Aeroplane",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/7919.mp3",
+    "source": "sample_provider"
+  },
+  "320145": {
+    "track_id": "320145",
+    "artist_name": "Chivers As A Female",
+    "track_name": "Sebastien Tellier, Mr Oizo & Sebastian",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "155870": {
+    "track_id": "155870",
+    "artist_name": "Crossover Appeal",
+    "track_name": "Gunsn' Bombs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/155870.mp3",
+    "source": "sample_provider"
+  },
+  "31170": {
+    "track_id": "31170",
+    "artist_name": "Anchors Away",
+    "track_name": "Autonervous",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/31170.mp3",
+    "source": "sample_provider"
+  },
+  "408562": {
+    "track_id": "408562",
+    "artist_name": "Grocery Bill Feat Josie Stingray",
+    "track_name": "Trackademicks",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "166291": {
+    "track_id": "166291",
+    "artist_name": "Shake A Fist",
+    "track_name": "Hot Chip",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/166291.mp3",
+    "source": "sample_provider"
+  },
+  "250931": {
+    "track_id": "250931",
+    "artist_name": "Agua De Beber",
+    "track_name": "Montefiori Cocktail",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/250931.mp3",
+    "source": "sample_provider"
+  },
+  "78331": {
+    "track_id": "78331",
+    "artist_name": "Jesus Loves Me",
+    "track_name": "Cocorosie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/78331.mp3",
+    "source": "sample_provider"
+  },
+  "291713": {
+    "track_id": "291713",
+    "artist_name": "Good & Bad",
+    "track_name": "Povo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/291713.mp3",
+    "source": "sample_provider"
+  },
+  "291717": {
+    "track_id": "291717",
+    "artist_name": "Million Ways",
+    "track_name": "Povo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/291717.mp3",
+    "source": "sample_provider"
+  },
+  "212404": {
+    "track_id": "212404",
+    "artist_name": "Erghen Diado",
+    "track_name": "Le Myst\u00e8re Des Voix Bulgares",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/212404.mp3",
+    "source": "sample_provider"
+  },
+  "424822": {
+    "track_id": "424822",
+    "artist_name": "D-Natural Blues",
+    "track_name": "Wes Montgomery",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/424822.mp3",
+    "source": "sample_provider"
+  },
+  "41084": {
+    "track_id": "41084",
+    "artist_name": "Open The Door",
+    "track_name": "Betty Carter",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/41084.mp3",
+    "source": "sample_provider"
+  },
+  "274011": {
+    "track_id": "274011",
+    "artist_name": "\u592a\u967d\u306e\u304b\u3051\u3089",
+    "track_name": "Orange Pekoe",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/274011.mp3",
+    "source": "sample_provider"
+  },
+  "205059": {
+    "track_id": "205059",
+    "artist_name": "Waltz For Koop",
+    "track_name": "Koop",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/205059.mp3",
+    "source": "sample_provider"
+  },
+  "44710": {
+    "track_id": "44710",
+    "artist_name": "Hidden Place",
+    "track_name": "Bj\u00f6rk",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/44710.mp3",
+    "source": "sample_provider"
+  },
+  "379398": {
+    "track_id": "379398",
+    "artist_name": "Marble House",
+    "track_name": "The Knife",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/379398.mp3",
+    "source": "sample_provider"
+  },
+  "288587": {
+    "track_id": "288587",
+    "artist_name": "Good Fortune",
+    "track_name": "Pj Harvey",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/288587.mp3",
+    "source": "sample_provider"
+  },
+  "10389": {
+    "track_id": "10389",
+    "artist_name": "Ce Matin-L\u00e0",
+    "track_name": "Air",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/10389.mp3",
+    "source": "sample_provider"
+  },
+  "431230": {
+    "track_id": "431230",
+    "artist_name": "No No No",
+    "track_name": "Yeah Yeah Yeahs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431230.mp3",
+    "source": "sample_provider"
+  },
+  "431250": {
+    "track_id": "431250",
+    "artist_name": "Tick",
+    "track_name": "Yeah Yeah Yeahs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431250.mp3",
+    "source": "sample_provider"
+  },
+  "279181": {
+    "track_id": "279181",
+    "artist_name": "All We Know",
+    "track_name": "Paramore",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "55795": {
+    "track_id": "55795",
+    "artist_name": "The Quiet Things That No One Ever Knows",
+    "track_name": "Brand New",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/55795.mp3",
+    "source": "sample_provider"
+  },
+  "373541": {
+    "track_id": "373541",
+    "artist_name": "Trust Me",
+    "track_name": "The Fray",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "31712": {
+    "track_id": "31712",
+    "artist_name": "Girlfriend",
+    "track_name": "Avril Lavigne",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/31712.mp3",
+    "source": "sample_provider"
+  },
+  "173978": {
+    "track_id": "173978",
+    "artist_name": "A Time To Be So Small",
+    "track_name": "Interpol",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "392288": {
+    "track_id": "392288",
+    "artist_name": "Cherub Rock",
+    "track_name": "The Smashing Pumpkins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392288.mp3",
+    "source": "sample_provider"
+  },
+  "25367": {
+    "track_id": "25367",
+    "artist_name": "Windowsill",
+    "track_name": "Arcade Fire",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/25367.mp3",
+    "source": "sample_provider"
+  },
+  "392488": {
+    "track_id": "392488",
+    "artist_name": "Today",
+    "track_name": "The Smashing Pumpkins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392488.mp3",
+    "source": "sample_provider"
+  },
+  "431232": {
+    "track_id": "431232",
+    "artist_name": "Phenomena",
+    "track_name": "Yeah Yeah Yeahs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431232.mp3",
+    "source": "sample_provider"
+  },
+  "431212": {
+    "track_id": "431212",
+    "artist_name": "Honeybear",
+    "track_name": "Yeah Yeah Yeahs",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431212.mp3",
+    "source": "sample_provider"
+  },
+  "394164": {
+    "track_id": "394164",
+    "artist_name": "The Modern Age",
+    "track_name": "The Strokes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/394164.mp3",
+    "source": "sample_provider"
+  },
+  "270141": {
+    "track_id": "270141",
+    "artist_name": "Supersonic",
+    "track_name": "Oasis",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/270141.mp3",
+    "source": "sample_provider"
+  },
+  "139433": {
+    "track_id": "139433",
+    "artist_name": "Come On Home",
+    "track_name": "Franz Ferdinand",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "25278": {
+    "track_id": "25278",
+    "artist_name": "(Antichrist Television Blues)",
+    "track_name": "Arcade Fire",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/25278.mp3",
+    "source": "sample_provider"
+  },
+  "296395": {
+    "track_id": "296395",
+    "artist_name": "Everybody Knows That You Are Insane",
+    "track_name": "Queens Of The Stone Age",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/296395.mp3",
+    "source": "sample_provider"
+  },
+  "397919": {
+    "track_id": "397919",
+    "artist_name": "I Just Don'T Know What To Do With Myself",
+    "track_name": "The White Stripes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/397919.mp3",
+    "source": "sample_provider"
+  },
+  "173994": {
+    "track_id": "173994",
+    "artist_name": "Hands Away",
+    "track_name": "Interpol",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/173994.mp3",
+    "source": "sample_provider"
+  },
+  "194000": {
+    "track_id": "194000",
+    "artist_name": "Bellona",
+    "track_name": "Junior Boys",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/194000.mp3",
+    "source": "sample_provider"
+  },
+  "288468": {
+    "track_id": "288468",
+    "artist_name": "Wave Of Mutilation",
+    "track_name": "Pixies",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/288468.mp3",
+    "source": "sample_provider"
+  },
+  "241932": {
+    "track_id": "241932",
+    "artist_name": "Dr. Blind",
+    "track_name": "Metric",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/241932.mp3",
+    "source": "sample_provider"
+  },
+  "372383": {
+    "track_id": "372383",
+    "artist_name": "Everday",
+    "track_name": "The Field",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/372383.mp3",
+    "source": "sample_provider"
+  },
+  "38510": {
+    "track_id": "38510",
+    "artist_name": "Bratislava",
+    "track_name": "Beirut",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/38510.mp3",
+    "source": "sample_provider"
+  },
+  "270165": {
+    "track_id": "270165",
+    "artist_name": "The Turning (Alt. Version #4)",
+    "track_name": "Oasis",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "384311": {
+    "track_id": "384311",
+    "artist_name": "Guide",
+    "track_name": "The Music",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/384311.mp3",
+    "source": "sample_provider"
+  },
+  "268362": {
+    "track_id": "268362",
+    "artist_name": "Sledgehammer",
+    "track_name": "Northern Kings",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/268362.mp3",
+    "source": "sample_provider"
+  },
+  "268357": {
+    "track_id": "268357",
+    "artist_name": "Fallen On Hard Times",
+    "track_name": "Northern Kings",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/268357.mp3",
+    "source": "sample_provider"
+  },
+  "384340": {
+    "track_id": "384340",
+    "artist_name": "Welcome To The North",
+    "track_name": "The Music",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/384340.mp3",
+    "source": "sample_provider"
+  },
+  "75876": {
+    "track_id": "75876",
+    "artist_name": "Over And Over Again (Lost And Found)",
+    "track_name": "Clap Your Hands Say Yeah",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/75876.mp3",
+    "source": "sample_provider"
+  },
+  "75882": {
+    "track_id": "75882",
+    "artist_name": "The Skin Of My Yellow Country Teeth",
+    "track_name": "Clap Your Hands Say Yeah",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/75882.mp3",
+    "source": "sample_provider"
+  },
+  "48241": {
+    "track_id": "48241",
+    "artist_name": "Plans",
+    "track_name": "Bloc Party",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48241.mp3",
+    "source": "sample_provider"
+  },
+  "237402": {
+    "track_id": "237402",
+    "artist_name": "Graffiti",
+    "track_name": "Max\u00efmo Park",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/237402.mp3",
+    "source": "sample_provider"
+  },
+  "192311": {
+    "track_id": "192311",
+    "artist_name": "No Love Lost",
+    "track_name": "Joy Division",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "398003": {
+    "track_id": "398003",
+    "artist_name": "There'S No Home For You Here",
+    "track_name": "The White Stripes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/398003.mp3",
+    "source": "sample_provider"
+  },
+  "111355": {
+    "track_id": "111355",
+    "artist_name": "Good Times Bad Times",
+    "track_name": "Dread Zeppelin",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/111355.mp3",
+    "source": "sample_provider"
+  },
+  "46102": {
+    "track_id": "46102",
+    "artist_name": "Iron Man",
+    "track_name": "Black Sabbath",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "298756": {
+    "track_id": "298756",
+    "artist_name": "Know Your Enemy",
+    "track_name": "Rage Against The Machine",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/298756.mp3",
+    "source": "sample_provider"
+  },
+  "360966": {
+    "track_id": "360966",
+    "artist_name": "I Want To Hold Your Hand",
+    "track_name": "The Beatles",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/360966.mp3",
+    "source": "sample_provider"
+  },
+  "387063": {
+    "track_id": "387063",
+    "artist_name": "Every Breath You Take",
+    "track_name": "The Police",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/387063.mp3",
+    "source": "sample_provider"
+  },
+  "212911": {
+    "track_id": "212911",
+    "artist_name": "The Battle Of Evermore",
+    "track_name": "Led Zeppelin",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/212911.mp3",
+    "source": "sample_provider"
+  },
+  "322697": {
+    "track_id": "322697",
+    "artist_name": "God Save The Queen",
+    "track_name": "Sex Pistols",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/322697.mp3",
+    "source": "sample_provider"
+  },
+  "392900": {
+    "track_id": "392900",
+    "artist_name": "Chiriacho Summit",
+    "track_name": "The Sound Of Animals Fighting",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392900.mp3",
+    "source": "sample_provider"
+  },
+  "392901": {
+    "track_id": "392901",
+    "artist_name": "Horses In The Sky",
+    "track_name": "The Sound Of Animals Fighting",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392901.mp3",
+    "source": "sample_provider"
+  },
+  "55760": {
+    "track_id": "55760",
+    "artist_name": "Jesus",
+    "track_name": "Brand New",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/55760.mp3",
+    "source": "sample_provider"
+  },
+  "267545": {
+    "track_id": "267545",
+    "artist_name": "Mind The Gap",
+    "track_name": "Noisettes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/267545.mp3",
+    "source": "sample_provider"
+  },
+  "187715": {
+    "track_id": "187715",
+    "artist_name": "Inside A Break",
+    "track_name": "John Frusciante",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/187715.mp3",
+    "source": "sample_provider"
+  },
+  "37174": {
+    "track_id": "37174",
+    "artist_name": "The Great Dinosaurs With Fifties Section",
+    "track_name": "Bear Vs. Shark",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/37174.mp3",
+    "source": "sample_provider"
+  },
+  "236331": {
+    "track_id": "236331",
+    "artist_name": "Songs We Sing",
+    "track_name": "Matt Costa",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/236331.mp3",
+    "source": "sample_provider"
+  },
+  "371850": {
+    "track_id": "371850",
+    "artist_name": "Rockstar Nailbomb!",
+    "track_name": "The Fall Of Troy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/371850.mp3",
+    "source": "sample_provider"
+  },
+  "146853": {
+    "track_id": "146853",
+    "artist_name": "Sea-Side Friends",
+    "track_name": "Ghinzu",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "146852": {
+    "track_id": "146852",
+    "artist_name": "Mine",
+    "track_name": "Ghinzu",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/146852.mp3",
+    "source": "sample_provider"
+  },
+  "417325": {
+    "track_id": "417325",
+    "artist_name": "The Kids Don'T Stand A Chance",
+    "track_name": "Vampire Weekend",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/417325.mp3",
+    "source": "sample_provider"
+  },
+  "338762": {
+    "track_id": "338762",
+    "artist_name": "We Won'T Match",
+    "track_name": "Speaker Speaker",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/338762.mp3",
+    "source": "sample_provider"
+  },
+  "141708": {
+    "track_id": "141708",
+    "artist_name": "Novelist'S Wife",
+    "track_name": "Fryars",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "431423": {
+    "track_id": "431423",
+    "artist_name": "Azure",
+    "track_name": "Yellow6",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431423.mp3",
+    "source": "sample_provider"
+  },
+  "431425": {
+    "track_id": "431425",
+    "artist_name": "Eighteen Days",
+    "track_name": "Yellow6",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431425.mp3",
+    "source": "sample_provider"
+  },
+  "193224": {
+    "track_id": "193224",
+    "artist_name": "Victoria",
+    "track_name": "Jukebox The Ghost",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/193224.mp3",
+    "source": "sample_provider"
+  },
+  "338761": {
+    "track_id": "338761",
+    "artist_name": "Radio Days (Live)",
+    "track_name": "Speaker Speaker",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/338761.mp3",
+    "source": "sample_provider"
+  },
+  "141712": {
+    "track_id": "141712",
+    "artist_name": "The Rise Of Jack And Chloe (Alternative Mix)",
+    "track_name": "Fryars",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/141712.mp3",
+    "source": "sample_provider"
+  },
+  "193222": {
+    "track_id": "193222",
+    "artist_name": "Good Day (Remix)",
+    "track_name": "Jukebox The Ghost",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/193222.mp3",
+    "source": "sample_provider"
+  },
+  "48816": {
+    "track_id": "48816",
+    "artist_name": "Take The Weight",
+    "track_name": "Blood Red Shoes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48816.mp3",
+    "source": "sample_provider"
+  },
+  "244444": {
+    "track_id": "244444",
+    "artist_name": "Intro",
+    "track_name": "Midnight Juggernauts",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/244444.mp3",
+    "source": "sample_provider"
+  },
+  "27142": {
+    "track_id": "27142",
+    "artist_name": "Emily Kane",
+    "track_name": "Art Brut",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/27142.mp3",
+    "source": "sample_provider"
+  },
+  "57243": {
+    "track_id": "57243",
+    "artist_name": "Lover I Don'T Have To Love",
+    "track_name": "Bright Eyes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/57243.mp3",
+    "source": "sample_provider"
+  },
+  "237400": {
+    "track_id": "237400",
+    "artist_name": "Going Missing",
+    "track_name": "Max\u00efmo Park",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/237400.mp3",
+    "source": "sample_provider"
+  },
+  "132184": {
+    "track_id": "132184",
+    "artist_name": "I Feel It All",
+    "track_name": "Feist",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/132184.mp3",
+    "source": "sample_provider"
+  },
+  "284613": {
+    "track_id": "284613",
+    "artist_name": "Amsterdam",
+    "track_name": "Peter Bjorn And John",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "302957": {
+    "track_id": "302957",
+    "artist_name": "Better",
+    "track_name": "Regina Spektor",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/302957.mp3",
+    "source": "sample_provider"
+  },
+  "3257": {
+    "track_id": "3257",
+    "artist_name": "Heart Of Hearts",
+    "track_name": "!!!",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/3257.mp3",
+    "source": "sample_provider"
+  },
+  "130230": {
+    "track_id": "130230",
+    "artist_name": "You'Re Crashing, But You'Re No Wave",
+    "track_name": "Fall Out Boy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/130230.mp3",
+    "source": "sample_provider"
+  },
+  "47910": {
+    "track_id": "47910",
+    "artist_name": "Online Songs",
+    "track_name": "Blink-182",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/47910.mp3",
+    "source": "sample_provider"
+  },
+  "48169": {
+    "track_id": "48169",
+    "artist_name": "Compliments",
+    "track_name": "Bloc Party",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48169.mp3",
+    "source": "sample_provider"
+  },
+  "358921": {
+    "track_id": "358921",
+    "artist_name": "Swing, Swing",
+    "track_name": "The All-American Rejects",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/358921.mp3",
+    "source": "sample_provider"
+  },
+  "79393": {
+    "track_id": "79393",
+    "artist_name": "Square One",
+    "track_name": "Coldplay",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/79393.mp3",
+    "source": "sample_provider"
+  },
+  "335326": {
+    "track_id": "335326",
+    "artist_name": "If You C Jordan",
+    "track_name": "Something Corporate",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/335326.mp3",
+    "source": "sample_provider"
+  },
+  "256549": {
+    "track_id": "256549",
+    "artist_name": "This Is How I Disappear",
+    "track_name": "My Chemical Romance",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/256549.mp3",
+    "source": "sample_provider"
+  },
+  "256501": {
+    "track_id": "256501",
+    "artist_name": "Dead!",
+    "track_name": "My Chemical Romance",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "302107": {
+    "track_id": "302107",
+    "artist_name": "Can'T Stop",
+    "track_name": "Red Hot Chili Peppers",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/302107.mp3",
+    "source": "sample_provider"
+  },
+  "136604": {
+    "track_id": "136604",
+    "artist_name": "Learn To Fly",
+    "track_name": "Foo Fighters",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/136604.mp3",
+    "source": "sample_provider"
+  },
+  "131221": {
+    "track_id": "131221",
+    "artist_name": "Praise You",
+    "track_name": "Fatboy Slim",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/131221.mp3",
+    "source": "sample_provider"
+  },
+  "217388": {
+    "track_id": "217388",
+    "artist_name": "Runaway",
+    "track_name": "Linkin Park",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/217388.mp3",
+    "source": "sample_provider"
+  },
+  "299510": {
+    "track_id": "299510",
+    "artist_name": "Ich Will",
+    "track_name": "Rammstein",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/299510.mp3",
+    "source": "sample_provider"
+  },
+  "331693": {
+    "track_id": "331693",
+    "artist_name": "Duality",
+    "track_name": "Slipknot",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/331693.mp3",
+    "source": "sample_provider"
+  },
+  "184653": {
+    "track_id": "184653",
+    "artist_name": "Hey Joe",
+    "track_name": "Jimi Hendrix",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "318830": {
+    "track_id": "318830",
+    "artist_name": "Little Man Tabla Jam Part 2",
+    "track_name": "Scott Matthews",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/318830.mp3",
+    "source": "sample_provider"
+  },
+  "79362": {
+    "track_id": "79362",
+    "artist_name": "Politik",
+    "track_name": "Coldplay",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/79362.mp3",
+    "source": "sample_provider"
+  },
+  "387855": {
+    "track_id": "387855",
+    "artist_name": "Diesel Power",
+    "track_name": "The Prodigy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/387855.mp3",
+    "source": "sample_provider"
+  },
+  "365824": {
+    "track_id": "365824",
+    "artist_name": "O My Love",
+    "track_name": "The Cloud Room",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/365824.mp3",
+    "source": "sample_provider"
+  },
+  "55792": {
+    "track_id": "55792",
+    "artist_name": "The Boy Who Blocked His Own Shot",
+    "track_name": "Brand New",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/55792.mp3",
+    "source": "sample_provider"
+  },
+  "396280": {
+    "track_id": "396280",
+    "artist_name": "I'M A Fake",
+    "track_name": "The Used",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/396280.mp3",
+    "source": "sample_provider"
+  },
+  "431476": {
+    "track_id": "431476",
+    "artist_name": "Ocean Avenue",
+    "track_name": "Yellowcard",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/431476.mp3",
+    "source": "sample_provider"
+  },
+  "396313": {
+    "track_id": "396313",
+    "artist_name": "Take It Away",
+    "track_name": "The Used",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/396313.mp3",
+    "source": "sample_provider"
+  },
+  "1595": {
+    "track_id": "1595",
+    "artist_name": "Attack",
+    "track_name": "30 Seconds To Mars",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/1595.mp3",
+    "source": "sample_provider"
+  },
+  "279196": {
+    "track_id": "279196",
+    "artist_name": "For A Pessimist, I'M Pretty Optimistic",
+    "track_name": "Paramore",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/279196.mp3",
+    "source": "sample_provider"
+  },
+  "291379": {
+    "track_id": "291379",
+    "artist_name": "Plastic",
+    "track_name": "Portishead",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/291379.mp3",
+    "source": "sample_provider"
+  },
+  "434052": {
+    "track_id": "434052",
+    "artist_name": "Simple Things",
+    "track_name": "Zero 7",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/434052.mp3",
+    "source": "sample_provider"
+  },
+  "434005": {
+    "track_id": "434005",
+    "artist_name": "Give It Away",
+    "track_name": "Zero 7",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/434005.mp3",
+    "source": "sample_provider"
+  },
+  "298218": {
+    "track_id": "298218",
+    "artist_name": "Packt Like Sardines In A Crushd Tin Box",
+    "track_name": "Radiohead",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/298218.mp3",
+    "source": "sample_provider"
+  },
+  "249626": {
+    "track_id": "249626",
+    "artist_name": "Friend Of The Night",
+    "track_name": "Mogwai",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/249626.mp3",
+    "source": "sample_provider"
+  },
+  "10461": {
+    "track_id": "10461",
+    "artist_name": "Napalm Love",
+    "track_name": "Air",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/10461.mp3",
+    "source": "sample_provider"
+  },
+  "226077": {
+    "track_id": "226077",
+    "artist_name": "Don'T Save Us From The Flames",
+    "track_name": "M83",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/226077.mp3",
+    "source": "sample_provider"
+  },
+  "255230": {
+    "track_id": "255230",
+    "artist_name": "Green Grass Of Tunnel",
+    "track_name": "M\u00fam",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/255230.mp3",
+    "source": "sample_provider"
+  },
+  "256397": {
+    "track_id": "256397",
+    "artist_name": "Loomer",
+    "track_name": "My Bloody Valentine",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/256397.mp3",
+    "source": "sample_provider"
+  },
+  "388640": {
+    "track_id": "388640",
+    "artist_name": "22 Grand Job",
+    "track_name": "The Rakes",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "197346": {
+    "track_id": "197346",
+    "artist_name": "L.S.F. (Lost Souls Forever)",
+    "track_name": "Kasabian",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/197346.mp3",
+    "source": "sample_provider"
+  },
+  "380510": {
+    "track_id": "380510",
+    "artist_name": "Death On The Stairs",
+    "track_name": "The Libertines",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/380510.mp3",
+    "source": "sample_provider"
+  },
+  "116278": {
+    "track_id": "116278",
+    "artist_name": "Camera",
+    "track_name": "Editors",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/116278.mp3",
+    "source": "sample_provider"
+  },
+  "116287": {
+    "track_id": "116287",
+    "artist_name": "Fall",
+    "track_name": "Editors",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/116287.mp3",
+    "source": "sample_provider"
+  },
+  "27164": {
+    "track_id": "27164",
+    "artist_name": "My Little Brother",
+    "track_name": "Art Brut",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/27164.mp3",
+    "source": "sample_provider"
+  },
+  "345253": {
+    "track_id": "345253",
+    "artist_name": "Bog To Jeden Wie",
+    "track_name": "Strachy Na Lachy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/345253.mp3",
+    "source": "sample_provider"
+  },
+  "345272": {
+    "track_id": "345272",
+    "artist_name": "Paint In Black",
+    "track_name": "Strachy Na Lachy",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/345272.mp3",
+    "source": "sample_provider"
+  },
+  "86420": {
+    "track_id": "86420",
+    "artist_name": "J\u0119zyk W\u0119\u017ca",
+    "track_name": "Czes\u0142aw \u015apiewa",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/86420.mp3",
+    "source": "sample_provider"
+  },
+  "163474": {
+    "track_id": "163474",
+    "artist_name": "By\u0142abym",
+    "track_name": "Hey",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/163474.mp3",
+    "source": "sample_provider"
+  },
+  "81579": {
+    "track_id": "81579",
+    "artist_name": "Radio Mi\u0142o\u015b\u0107",
+    "track_name": "Cool Kids Of Death",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/81579.mp3",
+    "source": "sample_provider"
+  },
+  "81546": {
+    "track_id": "81546",
+    "artist_name": "Armia Zbawienia",
+    "track_name": "Cool Kids Of Death",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/81546.mp3",
+    "source": "sample_provider"
+  },
+  "407105": {
+    "track_id": "407105",
+    "artist_name": "Reflection",
+    "track_name": "Tool",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/407105.mp3",
+    "source": "sample_provider"
+  },
+  "299530": {
+    "track_id": "299530",
+    "artist_name": "Mein Herz Brennt",
+    "track_name": "Rammstein",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "299498": {
+    "track_id": "299498",
+    "artist_name": "Feuer Frei!",
+    "track_name": "Rammstein",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/299498.mp3",
+    "source": "sample_provider"
+  },
+  "202259": {
+    "track_id": "202259",
+    "artist_name": "In The Wake Of Poseidon (Including Libra'S Theme)",
+    "track_name": "King Crimson",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/202259.mp3",
+    "source": "sample_provider"
+  },
+  "202293": {
+    "track_id": "202293",
+    "artist_name": "Neurotica",
+    "track_name": "King Crimson",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "387312": {
+    "track_id": "387312",
+    "artist_name": "Thief Of Fire",
+    "track_name": "The Pop Group",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/387312.mp3",
+    "source": "sample_provider"
+  },
+  "254020": {
+    "track_id": "254020",
+    "artist_name": "Squeeze Me Macaroni",
+    "track_name": "Mr. Bungle",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/254020.mp3",
+    "source": "sample_provider"
+  },
+  "347099": {
+    "track_id": "347099",
+    "artist_name": "The Man Of Metropolis Steals Our Hearts",
+    "track_name": "Sufjan Stevens",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/347099.mp3",
+    "source": "sample_provider"
+  },
+  "58435": {
+    "track_id": "58435",
+    "artist_name": "Capture The Flag",
+    "track_name": "Broken Social Scene",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/58435.mp3",
+    "source": "sample_provider"
+  },
+  "189466": {
+    "track_id": "189466",
+    "artist_name": "I Walk The Line",
+    "track_name": "Johnny Cash",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/189466.mp3",
+    "source": "sample_provider"
+  },
+  "347021": {
+    "track_id": "347021",
+    "artist_name": "Jacksonville",
+    "track_name": "Sufjan Stevens",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/347021.mp3",
+    "source": "sample_provider"
+  },
+  "249329": {
+    "track_id": "249329",
+    "artist_name": "Bukowski",
+    "track_name": "Modest Mouse",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/249329.mp3",
+    "source": "sample_provider"
+  },
+  "382193": {
+    "track_id": "382193",
+    "artist_name": "Son Et Lumiere",
+    "track_name": "The Mars Volta",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "392391": {
+    "track_id": "392391",
+    "artist_name": "Perfect",
+    "track_name": "The Smashing Pumpkins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392391.mp3",
+    "source": "sample_provider"
+  },
+  "288384": {
+    "track_id": "288384",
+    "artist_name": "Gouge Away",
+    "track_name": "Pixies",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/288384.mp3",
+    "source": "sample_provider"
+  },
+  "397872": {
+    "track_id": "397872",
+    "artist_name": "Black Math",
+    "track_name": "The White Stripes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/397872.mp3",
+    "source": "sample_provider"
+  },
+  "249331": {
+    "track_id": "249331",
+    "artist_name": "Bury Me With It",
+    "track_name": "Modest Mouse",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/249331.mp3",
+    "source": "sample_provider"
+  },
+  "262071": {
+    "track_id": "262071",
+    "artist_name": "Oh Comely",
+    "track_name": "Neutral Milk Hotel",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/262071.mp3",
+    "source": "sample_provider"
+  },
+  "368766": {
+    "track_id": "368766",
+    "artist_name": "The Engine Driver",
+    "track_name": "The Decemberists",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/368766.mp3",
+    "source": "sample_provider"
+  },
+  "391583": {
+    "track_id": "391583",
+    "artist_name": "The Celibate Life",
+    "track_name": "The Shins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/391583.mp3",
+    "source": "sample_provider"
+  },
+  "132222": {
+    "track_id": "132222",
+    "artist_name": "One Evening",
+    "track_name": "Feist",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/132222.mp3",
+    "source": "sample_provider"
+  },
+  "175096": {
+    "track_id": "175096",
+    "artist_name": "Naked As We Came",
+    "track_name": "Iron & Wine",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/175096.mp3",
+    "source": "sample_provider"
+  },
+  "95654": {
+    "track_id": "95654",
+    "artist_name": "Expo '86",
+    "track_name": "Death Cab For Cutie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/95654.mp3",
+    "source": "sample_provider"
+  },
+  "175088": {
+    "track_id": "175088",
+    "artist_name": "Love And Some Verses",
+    "track_name": "Iron & Wine",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/175088.mp3",
+    "source": "sample_provider"
+  },
+  "95648": {
+    "track_id": "95648",
+    "artist_name": "Death Of An Interior Decorator",
+    "track_name": "Death Cab For Cutie",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "302991": {
+    "track_id": "302991",
+    "artist_name": "Hotel Song",
+    "track_name": "Regina Spektor",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/302991.mp3",
+    "source": "sample_provider"
+  },
+  "306076": {
+    "track_id": "306076",
+    "artist_name": "The Execution Of All Things",
+    "track_name": "Rilo Kiley",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/306076.mp3",
+    "source": "sample_provider"
+  },
+  "263662": {
+    "track_id": "263662",
+    "artist_name": "One Of These Things First",
+    "track_name": "Nick Drake",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "391542": {
+    "track_id": "391542",
+    "artist_name": "Girl Inform Me",
+    "track_name": "The Shins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/391542.mp3",
+    "source": "sample_provider"
+  },
+  "391596": {
+    "track_id": "391596",
+    "artist_name": "Weird Divide",
+    "track_name": "The Shins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/391596.mp3",
+    "source": "sample_provider"
+  },
+  "75888": {
+    "track_id": "75888",
+    "artist_name": "Upon This Tidal Wave Of Young Blood",
+    "track_name": "Clap Your Hands Say Yeah",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/75888.mp3",
+    "source": "sample_provider"
+  },
+  "144127": {
+    "track_id": "144127",
+    "artist_name": "Special",
+    "track_name": "Garbage",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/144127.mp3",
+    "source": "sample_provider"
+  },
+  "392569": {
+    "track_id": "392569",
+    "artist_name": "Frankly, Mr. Shankly",
+    "track_name": "The Smiths",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392569.mp3",
+    "source": "sample_provider"
+  },
+  "296098": {
+    "track_id": "296098",
+    "artist_name": "Crazy Little Thing Called Love",
+    "track_name": "Queen",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/296098.mp3",
+    "source": "sample_provider"
+  },
+  "392615": {
+    "track_id": "392615",
+    "artist_name": "Please, Please, Please Let Me Get What I Want",
+    "track_name": "The Smiths",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/392615.mp3",
+    "source": "sample_provider"
+  },
+  "92656": {
+    "track_id": "92656",
+    "artist_name": "The Man Who Sold The World",
+    "track_name": "David Bowie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/92656.mp3",
+    "source": "sample_provider"
+  },
+  "296313": {
+    "track_id": "296313",
+    "artist_name": "We Are The Champions",
+    "track_name": "Queen",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/296313.mp3",
+    "source": "sample_provider"
+  },
+  "275110": {
+    "track_id": "275110",
+    "artist_name": "All Gone Now",
+    "track_name": "Osi",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/275110.mp3",
+    "source": "sample_provider"
+  },
+  "193471": {
+    "track_id": "193471",
+    "artist_name": "Mermaids",
+    "track_name": "Juliana",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/193471.mp3",
+    "source": "sample_provider"
+  },
+  "341187": {
+    "track_id": "341187",
+    "artist_name": "Finger Points",
+    "track_name": "Stanley Clarke & George Duke",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "23013": {
+    "track_id": "23013",
+    "artist_name": "Psalms",
+    "track_name": "Antimatter",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/23013.mp3",
+    "source": "sample_provider"
+  },
+  "193470": {
+    "track_id": "193470",
+    "artist_name": "Marble Halls",
+    "track_name": "Juliana",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/193470.mp3",
+    "source": "sample_provider"
+  },
+  "275121": {
+    "track_id": "275121",
+    "artist_name": "Memory Daydreams Lapses",
+    "track_name": "Osi",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "341189": {
+    "track_id": "341189",
+    "artist_name": "Lady",
+    "track_name": "Stanley Clarke & George Duke",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/341189.mp3",
+    "source": "sample_provider"
+  },
+  "195898": {
+    "track_id": "195898",
+    "artist_name": "Lies",
+    "track_name": "Kaki King",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/195898.mp3",
+    "source": "sample_provider"
+  },
+  "310885": {
+    "track_id": "310885",
+    "artist_name": "Antonin Dvorak, Symphony No. 8 In G Major, Op. 88, Adagio",
+    "track_name": "Royal Concertgebouw Orchestra, Carlo Maria Giulini",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/310885.mp3",
+    "source": "sample_provider"
+  },
+  "111362": {
+    "track_id": "111362",
+    "artist_name": "Out On The Tiles",
+    "track_name": "Dread Zeppelin",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/111362.mp3",
+    "source": "sample_provider"
+  },
+  "299048": {
+    "track_id": "299048",
+    "artist_name": "Long Live Rock 'N' Roll",
+    "track_name": "Rainbow",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/299048.mp3",
+    "source": "sample_provider"
+  },
+  "52817": {
+    "track_id": "52817",
+    "artist_name": "Runaway",
+    "track_name": "Bon Jovi",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/52817.mp3",
+    "source": "sample_provider"
+  },
+  "49477": {
+    "track_id": "49477",
+    "artist_name": "(Don'T Fear) The Reaper",
+    "track_name": "Blue \u00d6yster Cult",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/49477.mp3",
+    "source": "sample_provider"
+  },
+  "241528": {
+    "track_id": "241528",
+    "artist_name": "For Whom The Bell Tolls",
+    "track_name": "Metallica",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "266143": {
+    "track_id": "266143",
+    "artist_name": "Drain You",
+    "track_name": "Nirvana",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/266143.mp3",
+    "source": "sample_provider"
+  },
+  "155810": {
+    "track_id": "155810",
+    "artist_name": "Patience",
+    "track_name": "Guns N' Roses",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/155810.mp3",
+    "source": "sample_provider"
+  },
+  "360879": {
+    "track_id": "360879",
+    "artist_name": "Get Back",
+    "track_name": "The Beatles",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/360879.mp3",
+    "source": "sample_provider"
+  },
+  "212907": {
+    "track_id": "212907",
+    "artist_name": "Tangerine",
+    "track_name": "Led Zeppelin",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/212907.mp3",
+    "source": "sample_provider"
+  },
+  "104350": {
+    "track_id": "104350",
+    "artist_name": "Sultans Of Swing",
+    "track_name": "Dire Straits",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/104350.mp3",
+    "source": "sample_provider"
+  },
+  "213298": {
+    "track_id": "213298",
+    "artist_name": "Afrika Shox",
+    "track_name": "Leftfield",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/213298.mp3",
+    "source": "sample_provider"
+  },
+  "248902": {
+    "track_id": "248902",
+    "artist_name": "Love Should",
+    "track_name": "Moby",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/248902.mp3",
+    "source": "sample_provider"
+  },
+  "141635": {
+    "track_id": "141635",
+    "artist_name": "Hear Me Out",
+    "track_name": "Frou Frou",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/141635.mp3",
+    "source": "sample_provider"
+  },
+  "50643": {
+    "track_id": "50643",
+    "artist_name": "In A Beautiful Place Out In The Country",
+    "track_name": "Boards Of Canada",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/50643.mp3",
+    "source": "sample_provider"
+  },
+  "26988": {
+    "track_id": "26988",
+    "artist_name": "Revart Amx",
+    "track_name": "Arovane",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/26988.mp3",
+    "source": "sample_provider"
+  },
+  "349760": {
+    "track_id": "349760",
+    "artist_name": "Live Echo",
+    "track_name": "Susumu Yokota",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/349760.mp3",
+    "source": "sample_provider"
+  },
+  "26985": {
+    "track_id": "26985",
+    "artist_name": "Parf",
+    "track_name": "Arovane",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "75986": {
+    "track_id": "75986",
+    "artist_name": "Springtime Epiphany",
+    "track_name": "Clark",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/75986.mp3",
+    "source": "sample_provider"
+  },
+  "95346": {
+    "track_id": "95346",
+    "artist_name": "Dial",
+    "track_name": "Deaf Center",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/95346.mp3",
+    "source": "sample_provider"
+  },
+  "220105": {
+    "track_id": "220105",
+    "artist_name": "Red Thing Called Love",
+    "track_name": "Loopless",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/220105.mp3",
+    "source": "sample_provider"
+  },
+  "54145": {
+    "track_id": "54145",
+    "artist_name": "Moanin'",
+    "track_name": "Boozoo Bajou",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "106682": {
+    "track_id": "106682",
+    "artist_name": "Freestyle",
+    "track_name": "Dj Krush, Dj Shadow &Roni Size",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/106682.mp3",
+    "source": "sample_provider"
+  },
+  "198177": {
+    "track_id": "198177",
+    "artist_name": "Fadinho Serrano",
+    "track_name": "Katia Guerreiro",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "248517": {
+    "track_id": "248517",
+    "artist_name": "Hit The Road Jack",
+    "track_name": "Mo' Horizons",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/248517.mp3",
+    "source": "sample_provider"
+  },
+  "108864": {
+    "track_id": "108864",
+    "artist_name": "Don'T Stop",
+    "track_name": "Dolphin Boy",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "34315": {
+    "track_id": "34315",
+    "artist_name": "Reach Inside",
+    "track_name": "Bah Samba",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/34315.mp3",
+    "source": "sample_provider"
+  },
+  "410850": {
+    "track_id": "410850",
+    "artist_name": "Make A Move",
+    "track_name": "Tr\u00fcby Trio",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/410850.mp3",
+    "source": "sample_provider"
+  },
+  "312302": {
+    "track_id": "312302",
+    "artist_name": "Yyz",
+    "track_name": "Rush",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/312302.mp3",
+    "source": "sample_provider"
+  },
+  "401123": {
+    "track_id": "401123",
+    "artist_name": "The Clock",
+    "track_name": "Thom Yorke",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/401123.mp3",
+    "source": "sample_provider"
+  },
+  "407076": {
+    "track_id": "407076",
+    "artist_name": "Lost Keys (Blame Hofmann)",
+    "track_name": "Tool",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/407076.mp3",
+    "source": "sample_provider"
+  },
+  "370162": {
+    "track_id": "370162",
+    "artist_name": "Touch Me",
+    "track_name": "The Doors",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/370162.mp3",
+    "source": "sample_provider"
+  },
+  "202234": {
+    "track_id": "202234",
+    "artist_name": "Epitaph",
+    "track_name": "King Crimson",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/202234.mp3",
+    "source": "sample_provider"
+  },
+  "44609": {
+    "track_id": "44609",
+    "artist_name": "Bachelorette",
+    "track_name": "Bj\u00f6rk",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/44609.mp3",
+    "source": "sample_provider"
+  },
+  "370142": {
+    "track_id": "370142",
+    "artist_name": "The End",
+    "track_name": "The Doors",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/370142.mp3",
+    "source": "sample_provider"
+  },
+  "77526": {
+    "track_id": "77526",
+    "artist_name": "Bottoms Up, Socrates",
+    "track_name": "Clutch",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/77526.mp3",
+    "source": "sample_provider"
+  },
+  "213221": {
+    "track_id": "213221",
+    "artist_name": "Itkisitk\u00f6 Onnesta?",
+    "track_name": "Leevi And The Leavings",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/213221.mp3",
+    "source": "sample_provider"
+  },
+  "240050": {
+    "track_id": "240050",
+    "artist_name": "Clipping Roses",
+    "track_name": "Melvins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/240050.mp3",
+    "source": "sample_provider"
+  },
+  "240158": {
+    "track_id": "240158",
+    "artist_name": "Lovely Butterflies (New And Improved)",
+    "track_name": "Melvins",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/240158.mp3",
+    "source": "sample_provider"
+  },
+  "240002": {
+    "track_id": "240002",
+    "artist_name": "Toadi Acceleratio",
+    "track_name": "Melvins & Lustmord",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "46070": {
+    "track_id": "46070",
+    "artist_name": "Electric Funeral",
+    "track_name": "Black Sabbath",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/46070.mp3",
+    "source": "sample_provider"
+  },
+  "331686": {
+    "track_id": "331686",
+    "artist_name": "Disasterpiece",
+    "track_name": "Slipknot",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/331686.mp3",
+    "source": "sample_provider"
+  },
+  "298730": {
+    "track_id": "298730",
+    "artist_name": "Fistful Of Steel",
+    "track_name": "Rage Against The Machine",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/298730.mp3",
+    "source": "sample_provider"
+  },
+  "282722": {
+    "track_id": "282722",
+    "artist_name": "Even Flow",
+    "track_name": "Pearl Jam",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/282722.mp3",
+    "source": "sample_provider"
+  },
+  "212838": {
+    "track_id": "212838",
+    "artist_name": "All My Love",
+    "track_name": "Led Zeppelin",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/212838.mp3",
+    "source": "sample_provider"
+  },
+  "96964": {
+    "track_id": "96964",
+    "artist_name": "Smoke On The Water",
+    "track_name": "Deep Purple",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "217249": {
+    "track_id": "217249",
+    "artist_name": "Bleed It Out",
+    "track_name": "Linkin Park",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/217249.mp3",
+    "source": "sample_provider"
+  },
+  "331764": {
+    "track_id": "331764",
+    "artist_name": "The Nameless",
+    "track_name": "Slipknot",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/331764.mp3",
+    "source": "sample_provider"
+  },
+  "321388": {
+    "track_id": "321388",
+    "artist_name": "May Today Become The Day",
+    "track_name": "Sentenced",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/321388.mp3",
+    "source": "sample_provider"
+  },
+  "171644": {
+    "track_id": "171644",
+    "artist_name": "Behind Space '99",
+    "track_name": "In Flames",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/171644.mp3",
+    "source": "sample_provider"
+  },
+  "299465": {
+    "track_id": "299465",
+    "artist_name": "Amour",
+    "track_name": "Rammstein",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/299465.mp3",
+    "source": "sample_provider"
+  },
+  "10439": {
+    "track_id": "10439",
+    "artist_name": "Le Voyage De P\u00e9n\u00e9lope",
+    "track_name": "Air",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/10439.mp3",
+    "source": "sample_provider"
+  },
+  "50741": {
+    "track_id": "50741",
+    "artist_name": "Turquoise Hexagon Sun",
+    "track_name": "Boards Of Canada",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/50741.mp3",
+    "source": "sample_provider"
+  },
+  "291329": {
+    "track_id": "291329",
+    "artist_name": "Biscuit",
+    "track_name": "Portishead",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/291329.mp3",
+    "source": "sample_provider"
+  },
+  "210729": {
+    "track_id": "210729",
+    "artist_name": "Gorecki",
+    "track_name": "Lamb",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/210729.mp3",
+    "source": "sample_provider"
+  },
+  "400249": {
+    "track_id": "400249",
+    "artist_name": "All That We Perceive",
+    "track_name": "Thievery Corporation",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/400249.mp3",
+    "source": "sample_provider"
+  },
+  "134457": {
+    "track_id": "134457",
+    "artist_name": "Emerge",
+    "track_name": "Fischerspooner",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/134457.mp3",
+    "source": "sample_provider"
+  },
+  "335135": {
+    "track_id": "335135",
+    "artist_name": "A Way In The Wilderness Dub",
+    "track_name": "Solomon Jabby",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/335135.mp3",
+    "source": "sample_provider"
+  },
+  "300535": {
+    "track_id": "300535",
+    "artist_name": "Child Of A Slave",
+    "track_name": "Ras Shiloh",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/300535.mp3",
+    "source": "sample_provider"
+  },
+  "245142": {
+    "track_id": "245142",
+    "artist_name": "Comic Strip",
+    "track_name": "Mikey Dread",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/245142.mp3",
+    "source": "sample_provider"
+  },
+  "168935": {
+    "track_id": "168935",
+    "artist_name": "Empress",
+    "track_name": "I Wayne",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/168935.mp3",
+    "source": "sample_provider"
+  },
+  "364012": {
+    "track_id": "364012",
+    "artist_name": "Chemist Special",
+    "track_name": "The Bush Chemists",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/364012.mp3",
+    "source": "sample_provider"
+  },
+  "248963": {
+    "track_id": "248963",
+    "artist_name": "Rushing",
+    "track_name": "Moby",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/248963.mp3",
+    "source": "sample_provider"
+  },
+  "291362": {
+    "track_id": "291362",
+    "artist_name": "Mysterons",
+    "track_name": "Portishead",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/291362.mp3",
+    "source": "sample_provider"
+  },
+  "134087": {
+    "track_id": "134087",
+    "artist_name": "Ursvamp",
+    "track_name": "Finntroll",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/134087.mp3",
+    "source": "sample_provider"
+  },
+  "403960": {
+    "track_id": "403960",
+    "artist_name": "Tulkaa Kotiin",
+    "track_name": "Timo Rautiainen & Trio Niskalaukaus",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/403960.mp3",
+    "source": "sample_provider"
+  },
+  "224294": {
+    "track_id": "224294",
+    "artist_name": "Pitch Black Emotions",
+    "track_name": "Lullacry",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "205592": {
+    "track_id": "205592",
+    "artist_name": "Raudanlujat",
+    "track_name": "Kotiteollisuus",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/205592.mp3",
+    "source": "sample_provider"
+  },
+  "335890": {
+    "track_id": "335890",
+    "artist_name": "Power Of Need",
+    "track_name": "Sonic Roots",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/335890.mp3",
+    "source": "sample_provider"
+  },
+  "351703": {
+    "track_id": "351703",
+    "artist_name": "Revenga",
+    "track_name": "System Of A Down",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/351703.mp3",
+    "source": "sample_provider"
+  },
+  "239355": {
+    "track_id": "239355",
+    "artist_name": "Symphony Of Destruction",
+    "track_name": "Megadeth",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/239355.mp3",
+    "source": "sample_provider"
+  },
+  "134068": {
+    "track_id": "134068",
+    "artist_name": "Rivfader",
+    "track_name": "Finntroll",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/134068.mp3",
+    "source": "sample_provider"
+  },
+  "99350": {
+    "track_id": "99350",
+    "artist_name": "Never Let Me Down Again",
+    "track_name": "Depeche Mode",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/99350.mp3",
+    "source": "sample_provider"
+  },
+  "257285": {
+    "track_id": "257285",
+    "artist_name": "Valley Of The Dolls",
+    "track_name": "Mylo",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "134494": {
+    "track_id": "134494",
+    "artist_name": "Natural Disaster",
+    "track_name": "Fischerspooner",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/134494.mp3",
+    "source": "sample_provider"
+  },
+  "119354": {
+    "track_id": "119354",
+    "artist_name": "Alles Sehen",
+    "track_name": "Ellen Allien",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/119354.mp3",
+    "source": "sample_provider"
+  },
+  "119337": {
+    "track_id": "119337",
+    "artist_name": "Leave Me Alone",
+    "track_name": "Ellen Allien & Apparat",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/119337.mp3",
+    "source": "sample_provider"
+  },
+  "318584": {
+    "track_id": "318584",
+    "artist_name": "1.75 Tc",
+    "track_name": "Scorn",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "130810": {
+    "track_id": "130810",
+    "artist_name": "Ff",
+    "track_name": "Farben",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/130810.mp3",
+    "source": "sample_provider"
+  },
+  "103860": {
+    "track_id": "103860",
+    "artist_name": "Don'T Talk To Strangers",
+    "track_name": "Dio",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/103860.mp3",
+    "source": "sample_provider"
+  },
+  "427652": {
+    "track_id": "427652",
+    "artist_name": "Stand My Ground",
+    "track_name": "Within Temptation",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/427652.mp3",
+    "source": "sample_provider"
+  },
+  "241736": {
+    "track_id": "241736",
+    "artist_name": "Until It Sleeps",
+    "track_name": "Metallica",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/241736.mp3",
+    "source": "sample_provider"
+  },
+  "430899": {
+    "track_id": "430899",
+    "artist_name": "Le Banquet",
+    "track_name": "Yann Tiersen",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "161206": {
+    "track_id": "161206",
+    "artist_name": "Let Me Go (Extended Mix)",
+    "track_name": "Heaven 17",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/161206.mp3",
+    "source": "sample_provider"
+  },
+  "221084": {
+    "track_id": "221084",
+    "artist_name": "Enrique El Ultrassur",
+    "track_name": "Los Nikis",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/221084.mp3",
+    "source": "sample_provider"
+  },
+  "221082": {
+    "track_id": "221082",
+    "artist_name": "Brutus",
+    "track_name": "Los Nikis",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/221082.mp3",
+    "source": "sample_provider"
+  },
+  "15220": {
+    "track_id": "15220",
+    "artist_name": "Fantastic Dream",
+    "track_name": "Alphaville",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/15220.mp3",
+    "source": "sample_provider"
+  },
+  "101105": {
+    "track_id": "101105",
+    "artist_name": "Freedom Of Choice",
+    "track_name": "Devo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/101105.mp3",
+    "source": "sample_provider"
+  },
+  "397962": {
+    "track_id": "397962",
+    "artist_name": "Offend In Every Way",
+    "track_name": "The White Stripes",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/397962.mp3",
+    "source": "sample_provider"
+  },
+  "48612": {
+    "track_id": "48612",
+    "artist_name": "One Way Or Another",
+    "track_name": "Blondie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/48612.mp3",
+    "source": "sample_provider"
+  },
+  "296387": {
+    "track_id": "296387",
+    "artist_name": "Broken Box",
+    "track_name": "Queens Of The Stone Age",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "58479": {
+    "track_id": "58479",
+    "artist_name": "Pacific Theme",
+    "track_name": "Broken Social Scene",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/58479.mp3",
+    "source": "sample_provider"
+  },
+  "380560": {
+    "track_id": "380560",
+    "artist_name": "Narcissist",
+    "track_name": "The Libertines",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/380560.mp3",
+    "source": "sample_provider"
+  },
+  "380614": {
+    "track_id": "380614",
+    "artist_name": "What Katie Did",
+    "track_name": "The Libertines",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/380614.mp3",
+    "source": "sample_provider"
+  },
+  "50103": {
+    "track_id": "50103",
+    "artist_name": "Girls & Boys",
+    "track_name": "Blur",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/50103.mp3",
+    "source": "sample_provider"
+  },
+  "397298": {
+    "track_id": "397298",
+    "artist_name": "The Rat",
+    "track_name": "The Walkmen",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/397298.mp3",
+    "source": "sample_provider"
+  },
+  "21947": {
+    "track_id": "21947",
+    "artist_name": "Heartbeat",
+    "track_name": "Annie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/21947.mp3",
+    "source": "sample_provider"
+  },
+  "288966": {
+    "track_id": "288966",
+    "artist_name": "The Crawl",
+    "track_name": "Placebo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/288966.mp3",
+    "source": "sample_provider"
+  },
+  "372881": {
+    "track_id": "372881",
+    "artist_name": "Yoshimi Battles The Pink Robots, Part 1",
+    "track_name": "The Flaming Lips",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/372881.mp3",
+    "source": "sample_provider"
+  },
+  "298133": {
+    "track_id": "298133",
+    "artist_name": "In Limbo",
+    "track_name": "Radiohead",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/298133.mp3",
+    "source": "sample_provider"
+  },
+  "43482": {
+    "track_id": "43482",
+    "artist_name": "White Wedding",
+    "track_name": "Billy Idol",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/43482.mp3",
+    "source": "sample_provider"
+  },
+  "92557": {
+    "track_id": "92557",
+    "artist_name": "Rebel Rebel",
+    "track_name": "David Bowie",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/92557.mp3",
+    "source": "sample_provider"
+  },
+  "30023": {
+    "track_id": "30023",
+    "artist_name": "Onemosphere",
+    "track_name": "Atmosphere",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "85349": {
+    "track_id": "85349",
+    "artist_name": "Tearing Me Apart - Original Mix",
+    "track_name": "Curses !",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/85349.mp3",
+    "source": "sample_provider"
+  },
+  "282594": {
+    "track_id": "282594",
+    "artist_name": "Rock The Shocker",
+    "track_name": "Peaches",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/282594.mp3",
+    "source": "sample_provider"
+  },
+  "84236": {
+    "track_id": "84236",
+    "artist_name": "Mix 4 Loose Cannons On Kiss Fm",
+    "track_name": "Crookers",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/84236.mp3",
+    "source": "sample_provider"
+  },
+  "311464": {
+    "track_id": "311464",
+    "artist_name": "Eclectic People",
+    "track_name": "Ruede Hagelstein",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/311464.mp3",
+    "source": "sample_provider"
+  },
+  "74447": {
+    "track_id": "74447",
+    "artist_name": "Needy Girl (Bloc Party'S High School Prom Remix)",
+    "track_name": "Chromeo",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/74447.mp3",
+    "source": "sample_provider"
+  },
+  "360977": {
+    "track_id": "360977",
+    "artist_name": "In My Life",
+    "track_name": "The Beatles",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/360977.mp3",
+    "source": "sample_provider"
+  },
+  "413111": {
+    "track_id": "413111",
+    "artist_name": "I Still Haven'T Found What I'M Looking For",
+    "track_name": "U2",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/413111.mp3",
+    "source": "sample_provider"
+  },
+  "426072": {
+    "track_id": "426072",
+    "artist_name": "What Light",
+    "track_name": "Wilco",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/426072.mp3",
+    "source": "sample_provider"
+  },
+  "172095": {
+    "track_id": "172095",
+    "artist_name": "I Miss You",
+    "track_name": "Incubus",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "130921": {
+    "track_id": "130921",
+    "artist_name": "Slip Of The Tongue",
+    "track_name": "Faster Pussycat",
+    "preview_url": null,
+    "source": "unavailable"
+  },
+  "151174": {
+    "track_id": "151174",
+    "artist_name": "For Lovers' Sake",
+    "track_name": "Goodness",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/151174.mp3",
+    "source": "sample_provider"
+  },
+  "266199": {
+    "track_id": "266199",
+    "artist_name": "Jesus Doesn'T Want Me For A Sunbeam",
+    "track_name": "Nirvana",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/266199.mp3",
+    "source": "sample_provider"
+  },
+  "130910": {
+    "track_id": "130910",
+    "artist_name": "Arizona Indian Doll",
+    "track_name": "Faster Pussycat",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/130910.mp3",
+    "source": "sample_provider"
+  },
+  "155790": {
+    "track_id": "155790",
+    "artist_name": "Move To The City",
+    "track_name": "Guns N' Roses",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/155790.mp3",
+    "source": "sample_provider"
+  },
+  "6194": {
+    "track_id": "6194",
+    "artist_name": "London Leatherboys",
+    "track_name": "Accept",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/6194.mp3",
+    "source": "sample_provider"
+  },
+  "6197": {
+    "track_id": "6197",
+    "artist_name": "Love Child",
+    "track_name": "Accept",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/6197.mp3",
+    "source": "sample_provider"
+  },
+  "45544": {
+    "track_id": "45544",
+    "artist_name": "Too Tough To Die",
+    "track_name": "Black Label Society",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/45544.mp3",
+    "source": "sample_provider"
+  },
+  "176772": {
+    "track_id": "176772",
+    "artist_name": "Jack Johnson",
+    "track_name": "Belle",
+    "preview_url": "https://cdn.euterpe.discovery.internal/previews/30s/176772.mp3",
+    "source": "sample_provider"
   }
 }
