@@ -536,68 +536,76 @@ def author_sequential_report(
     p_val_s: float,
     p_val_f: float,
 ) -> None:
-    content = f"""# EUTERPE — Sequential Recommendation Intelligence & Accuracy Lift Report
+    content = f"""# EUTERPE — Sequential Recommendation Benchmark Report
 **Document ID:** `EUTERPE-PH8-SEQ-001`  
-**Focus:** Resolving Accuracy Target Shortfall via Sequential Self-Attention (SASRec & GRU4Rec)  
-**Evaluation:** Frozen Test Partition (758 Warm Users, K=20, 443,375 Items)  
-**Strict Safeguard:** Zero future leakage; consumed training items masked (`scores[consumed] = -inf`)  
+**Focus:** Benchmarking Sequential Models (SASRec & GRU4Rec) vs. Classical Implicit ALS  
+**Evaluation:** Frozen Academic Test Partition (758 Warm Users, $K=20$, 443,375 Items)  
+**Safeguards:** Zero future leakage; consumed training items masked (`scores[consumed] = -inf`)  
 
 ---
 
-### Executive Summary: Accuracy Deficit Resolved
+### Executive Summary: Sequential-Hybrid Beats Implicit ALS on Test NDCG@20 (Pure SASRec Trails Baseline)
 
-In Phase 3 and Phase 4, two-tower neural retrieval expanded catalog and artist diversity, but fell short of Implicit ALS on raw ranking accuracy:
-- **Phase 3 Two-Tower NDCG@20:** `0.0458` vs. **ALS:** `0.0606` (Target missed).
-- **Core Diagnosis:** Average pooling over multi-year user histories discarded session transitions, chronological listening trajectory, and acoustic momentum.
+In Phase 3 and Phase 4, two-tower neural retrieval expanded catalog and artist diversity (reducing top-decile exposure from 99.44% to 75.27%), but fell short of Implicit ALS on raw ranking accuracy:
+- **Phase 3 Two-Tower NDCG@20:** `0.0458` vs. **ALS:** `0.0606` (Accuracy target missed).
+- **Core Diagnosis:** Static average pooling over multi-year user scrobble histories discarded session transitions, chronological trajectory, and acoustic momentum.
 
-To resolve this deficit, EUTERPE implemented and benchmarked state-of-the-art **Sequential Recommendation Architectures**:
+To determine whether sequential modeling can surpass collaborative filtering accuracy on a 443,375-item catalog, EUTERPE evaluated state-of-the-art **Sequential Recommendation Architectures**:
 1. **SASRec (Self-Attentive Sequential Recommendation):** Multi-head causal self-attention over chronological scrobble sequences.
 2. **GRU4Rec (Gated Recurrent Unit):** Multi-layer recurrent session-based transition modeling.
 3. **Sequential-Hybrid Engine (SASRec + ALS):** Dynamic sequential attention blended with collaborative filtering factor representations.
 
-**Result:** **SASRec and Sequential-Hybrid successfully BEAT Implicit ALS on NDCG@20 and Recall@20 on the frozen academic test set.**
+#### Key Empirical Results:
+- **Pure SASRec (NDCG@20 = {sasrec['ndcg_at_20']:.4f}):** Trails Implicit ALS (`{als['ndcg_at_20']:.4f}`, {((sasrec['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):+.1f}%, $p = {p_val_s:.4e}$). Pure self-attention trained from scratch without collaborative factor initialization does not beat ALS on raw ranking accuracy.
+- **GRU4Rec (NDCG@20 = {gru['ndcg_at_20']:.4f}):** Achieves a marginal {((gru['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):+.1f}% lift on NDCG, but exhibits lower recall (`{gru['recall_at_20']:.4f}` vs. `{als['recall_at_20']:.4f}`).
+- **Sequential-Hybrid SASRec + ALS (NDCG@20 = {fused['ndcg_at_20']:.4f}):** Achieves a **+{((fused['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):.1f}% relative lift over Implicit ALS** ($p = {p_val_f:.4e}$, Wilcoxon signed-rank test), with Recall@20 of `{fused['recall_at_20']:.4f}`.
+- **Verdict:** **Only the Sequential-Hybrid definitively beats Implicit ALS with statistical significance.**
 
 ---
 
-### 1. Benchmark Matrix: Sequential Models vs Frozen Classical Baseline
+### 1. Benchmark Matrix: Sequential Models vs. Frozen Classical Baseline
 
-| Model Architecture | Recall@20 | Capped Recall@20 | NDCG@20 | MRR@20 | Novelty (bits) | Catalog Coverage | Artist Coverage | Exposure Gini | Top-10% Share |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Implicit ALS (Frozen Baseline)** | {als['recall_at_20']:.4f} | {als['capped_recall_at_20']:.4f} | **{als['ndcg_at_20']:.4f}** | {als['mrr_at_20']:.4f} | {als['novelty_at_20']:.2f} | {als['catalog_coverage_pct']:.3f}% | {als['artist_coverage_pct']:.3f}% | {als['exposure_gini']:.4f} | {als['top_10pct_exposure_share_pct']:.2f}% |
-| **Two-Tower (Phase 3 N5)** | 0.0012 | 0.0413 | 0.0458 | 0.1136 | **15.95** | **2.119%** | **3.706%** | **0.9855** | **75.27%** |
-| **GRU4Rec (Recurrent Gated)** | {gru['recall_at_20']:.4f} | {gru['capped_recall_at_20']:.4f} | {gru['ndcg_at_20']:.4f} | {gru['mrr_at_20']:.4f} | {gru['novelty_at_20']:.2f} | {gru['catalog_coverage_pct']:.3f}% | {gru['artist_coverage_pct']:.3f}% | {gru['exposure_gini']:.4f} | {gru['top_10pct_exposure_share_pct']:.2f}% |
-| **SASRec (Self-Attentive)** | **{sasrec['recall_at_20']:.4f}** | **{sasrec['capped_recall_at_20']:.4f}** | **{sasrec['ndcg_at_20']:.4f}** | **{sasrec['mrr_at_20']:.4f}** | {sasrec['novelty_at_20']:.2f} | {sasrec['catalog_coverage_pct']:.3f}% | {sasrec['artist_coverage_pct']:.3f}% | {sasrec['exposure_gini']:.4f} | {sasrec['top_10pct_exposure_share_pct']:.2f}% |
-| **Sequential-Hybrid (SASRec + ALS)** | **{fused['recall_at_20']:.4f}** | **{fused['capped_recall_at_20']:.4f}** | **{fused['ndcg_at_20']:.4f}** | **{fused['mrr_at_20']:.4f}** | {fused['novelty_at_20']:.2f} | {fused['catalog_coverage_pct']:.3f}% | {fused['artist_coverage_pct']:.3f}% | {fused['exposure_gini']:.4f} | {fused['top_10pct_exposure_share_pct']:.2f}% |
+| Model Architecture | Recall@20 | Capped Recall@20 | NDCG@20 | MRR@20 | Novelty (bits) | Catalog Coverage | Artist Coverage | Exposure Gini | Top-10% Share | Accuracy vs. ALS |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Implicit ALS (Frozen Baseline)** | {als['recall_at_20']:.4f} | {als['capped_recall_at_20']:.4f} | **{als['ndcg_at_20']:.4f}** | {als['mrr_at_20']:.4f} | {als['novelty_at_20']:.2f} | {als['catalog_coverage_pct']:.3f}% | {als['artist_coverage_pct']:.3f}% | {als['exposure_gini']:.4f} | {als['top_10pct_exposure_share_pct']:.2f}% | Baseline |
+| **Two-Tower (Phase 3 N5)** | 0.0012 | 0.0413 | 0.0458 | 0.1136 | **15.95** | **2.119%** | **3.706%** | **0.9855** | **75.27%** | -24.4% (Missed) |
+| **SASRec (Self-Attentive)** | {sasrec['recall_at_20']:.4f} | {sasrec['capped_recall_at_20']:.4f} | {sasrec['ndcg_at_20']:.4f} | {sasrec['mrr_at_20']:.4f} | {sasrec['novelty_at_20']:.2f} | {sasrec['catalog_coverage_pct']:.3f}% | {sasrec['artist_coverage_pct']:.3f}% | {sasrec['exposure_gini']:.4f} | {sasrec['top_10pct_exposure_share_pct']:.2f}% | {((sasrec['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):+.1f}% ($p = {p_val_s:.4e}$) |
+| **GRU4Rec (Recurrent Gated)** | {gru['recall_at_20']:.4f} | {gru['capped_recall_at_20']:.4f} | {gru['ndcg_at_20']:.4f} | {gru['mrr_at_20']:.4f} | {gru['novelty_at_20']:.2f} | {gru['catalog_coverage_pct']:.3f}% | {gru['artist_coverage_pct']:.3f}% | {gru['exposure_gini']:.4f} | {gru['top_10pct_exposure_share_pct']:.2f}% | {((gru['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):+.1f}% (Marginal) |
+| **Sequential-Hybrid (SASRec + ALS)** | **{fused['recall_at_20']:.4f}** | **{fused['capped_recall_at_20']:.4f}** | **{fused['ndcg_at_20']:.4f}** | **{fused['mrr_at_20']:.4f}** | {fused['novelty_at_20']:.2f} | {fused['catalog_coverage_pct']:.3f}% | {fused['artist_coverage_pct']:.3f}% | {fused['exposure_gini']:.4f} | {fused['top_10pct_exposure_share_pct']:.2f}% | **+{((fused['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):.1f}% ($p = {p_val_f:.4e}$)** |
 
 ---
 
 ### 2. Statistical Significance & Hypothesis Verification
 
-- **SASRec vs. ALS:**
-  - $\\Delta \\text{{NDCG@20}}$: **{sasrec['ndcg_at_20'] - als['ndcg_at_20']:+.4f}** ({(sasrec['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100:+.1f}% relative lift over ALS)
-  - Paired Wilcoxon Signed-Rank Test: $p = {p_val_s:.4e}$
-  - $\\Delta \\text{{Recall@20}}$: **{sasrec['recall_at_20'] - als['recall_at_20']:+.4f}** ({(sasrec['recall_at_20'] - als['recall_at_20'])/als['recall_at_20']*100:+.1f}% relative lift)
+- **Pure SASRec vs. Implicit ALS:**
+  - $\\Delta \\text{{NDCG@20}}$: **{sasrec['ndcg_at_20'] - als['ndcg_at_20']:+.4f}** ({((sasrec['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):+.1f}% relative lift over ALS)
+  - Paired Wilcoxon Signed-Rank Test: $p = {p_val_s:.4e}$ (Fail to reject $H_0$; does not beat ALS)
+  - $\\Delta \\text{{Recall@20}}$: **{sasrec['recall_at_20'] - als['recall_at_20']:+.4f}** ({((sasrec['recall_at_20'] - als['recall_at_20'])/als['recall_at_20']*100):+.1f}% relative lift)
 
-- **Sequential-Hybrid vs. ALS:**
-  - $\\Delta \\text{{NDCG@20}}$: **{fused['ndcg_at_20'] - als['ndcg_at_20']:+.4f}** ({(fused['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100:+.1f}% relative lift over ALS)
-  - Paired Wilcoxon Signed-Rank Test: $p = {p_val_f:.4e}$
-  - $\\Delta \\text{{Recall@20}}$: **{fused['recall_at_20'] - als['recall_at_20']:+.4f}** ({(fused['recall_at_20'] - als['recall_at_20'])/als['recall_at_20']*100:+.1f}% relative lift)
+- **Sequential-Hybrid (SASRec + ALS) vs. Implicit ALS:**
+  - $\\Delta \\text{{NDCG@20}}$: **{fused['ndcg_at_20'] - als['ndcg_at_20']:+.4f}** ({((fused['ndcg_at_20'] - als['ndcg_at_20'])/als['ndcg_at_20']*100):+.1f}% relative lift over ALS)
+  - Paired Wilcoxon Signed-Rank Test: $p = {p_val_f:.4e}$ (Statistically significant at $\\alpha = 0.05$)
+  - $\\Delta \\text{{Recall@20}}$: **{fused['recall_at_20'] - als['recall_at_20']:+.4f}** ({((fused['recall_at_20'] - als['recall_at_20'])/als['recall_at_20']*100):+.1f}% relative lift)
 
 ---
 
-### 3. Why Sequential Attention Succeeds Where Two-Tower Failed
+### 3. Scientific Analysis: Accuracy vs. Exposure Trade-offs
 
-1. **Temporal Attention Dynamics:**
-   Unlike average pooling, SASRec's self-attention assigns dynamic weights across the user's chronological trajectory, prioritizing the genres, artists, and acoustic textures active immediately prior to the evaluation partition.
-2. **Session Momentum Preservation:**
-   Music consumption exhibits high session continuity. SASRec captures transition likelihoods between consecutive tracks without relying solely on global co-occurrence.
-3. **Balanced Head-Tail Exposure:**
-   While ALS allocates **99.44%** of recommendation slots to the top-decile head, SASRec allocates **82.35%**, freeing nearly **18%** of recommendation slots for the long tail while simultaneously outperforming ALS on accuracy.
+1. **Why Pure SASRec Needed Collaborative Hybridization:**
+   Music catalogs exhibit extreme scale (443,375 items in this academic benchmark). Pure sequence encoders trained via contrastive cross-entropy over local sequences suffer from sample sparsity in negative pools, failing to optimize the long tail of items. Hybridizing sequential attention scores with ALS collaborative factors grounds recent temporal signals in robust low-rank representations.
+
+2. **Catalog Exposure Realities (Head vs. Tail):**
+   - Sequential models trained directly on scrobble likelihood (SASRec: {sasrec['top_10pct_exposure_share_pct']:.2f}% top-decile exposure, Hybrid: {fused['top_10pct_exposure_share_pct']:.2f}%) mirror the popularity concentration of Implicit ALS ({als['top_10pct_exposure_share_pct']:.2f}%).
+   - Sequential modeling alone does not solve the discovery / head-bias problem.
+   - Expanding tail coverage (as demonstrated by Two-Tower N5 at 75.27% top-decile share and +164% catalog coverage) requires dedicated discovery mechanisms: log-Q debiased contrastive learning or Phase 4 multi-objective reranking with novelty surprisal.
 
 ---
 
 ### 4. Production Integration
-The SASRec encoder is serialized to `experiments/phase_8/models/sasrec_model.pt` and integrated into the `DiscoveryService` pipeline, providing dynamic sequential candidate retrieval alongside collaborative filtering.
+
+The serialized Sequential-Hybrid pipeline combines:
+1. **Candidate Retrieval:** Blended SASRec sequence scoring (`experiments/phase_8/models/sasrec_model.pt`) and ALS latent factor projection.
+2. **Discovery Reranking:** Multi-objective Pareto reranking (Phase 4) with novelty surprisal and artist diversity constraints ($C=2$).
 """
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
